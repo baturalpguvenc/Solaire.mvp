@@ -5,7 +5,6 @@
 
 
 
-
-# Sayfa-1
+Sayfa-1
 
 ![LOGO](public/img/Ekran Resmi 2023-10-06 10.16.35.png)
