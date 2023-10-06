@@ -1,0 +1,59 @@
+/* File: font.css */
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap") format("woff2");
+}
+
+@font-face {
+  font-family: "SatoshiBlack";
+  src: local("SatoshiBlack"), url("./assets/fonts/Satoshi-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "SatoshiMedium";
+  src: local("SatoshiMedium"), url("./assets/fonts/Satoshi-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "TerminaDemi";
+  src: local("TerminaDemi"), url("./assets/fonts/TerminaDemi.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "TerminaMedium";
+  src: local("TerminaMedium"), url("./assets/fonts/TerminaMedium.otf") format("opentype");
+}
+
+
+h1 {
+  font-family: "SatoshiBlack", sans-serif;
+  font-size: 110pt;
+  line-height: 99pt;
+  /* letter-spacing: -10pt; */
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "TerminaDemi", sans-serif;
+  font-size: 20pt;
+  line-height: 48pt;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "TerminaMedium", sans-serif;
+  font-size: 26pt;
+  line-height: 31.2pt;
+  text-transform: none;
+}
+
+p {
+  font-family: "SatoshiMedium", sans-serif;
+  font-size: 26pt;
+  line-height: 33.8pt;
+}
+
+a {
+  text-decoration: none;
+  color:white
+}
