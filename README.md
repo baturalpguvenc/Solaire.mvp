@@ -7,4 +7,4 @@
 
 # Page-1
 
-![PAGE-1](/public/img/Ekran Resmi 2023-10-06 10.16.35.png)
+![PAGE-1](/public/img/Ekran%20Resmi%202023-10-06%2010.16.35.png)
