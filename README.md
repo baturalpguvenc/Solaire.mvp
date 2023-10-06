@@ -1,5 +1,11 @@
 # Solaire.mvp
 
+Video Record: "https://drive.google.com/file/d/12pVeWd6vLX3L9wzICbKLwHXyP1TQQDIJ/view?usp=sharing"
+
+
+
+#Logo
+
 ![LOGO](/Ekran%20Resmi%202023-10-04%2022.03.59.png)
 
 
