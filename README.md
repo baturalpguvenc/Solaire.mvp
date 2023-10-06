@@ -7,10 +7,6 @@ Video Record: "https://drive.google.com/file/d/12pVeWd6vLX3L9wzICbKLwHXyP1TQQDIJ
 # Logo
 <img src="/Ekran%20Resmi%202023-10-04%2022.03.59.png" alt="Logo" width="200" height="150">
 
-![LOGO](/Ekran%20Resmi%202023-10-04%2022.03.59.png)
-
-
-
 
 # Page-1
 
