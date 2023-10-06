@@ -32,4 +32,4 @@
 
 # Page-6 
 
-![PAGE-6](/public/img/Ekran%20Resmi%202023-10-06%2010.16.38.png)      
+![PAGE-6](/public/img/Ekran%20Resmi%202023-10-06%2010.16.49.png)      
