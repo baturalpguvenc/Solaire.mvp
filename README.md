@@ -17,7 +17,7 @@
 
 # Page-3 
 
-![PAGE-3](/public/img/Ekran%20Resmi%202023-10-06%2010.16.38.png)      
+![PAGE-3](/public/img/Ekran%20Resmi%202023-10-06%2010.16.41.png)      
 
 
 # Page-4 
