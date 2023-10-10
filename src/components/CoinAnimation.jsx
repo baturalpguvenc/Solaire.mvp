@@ -8,8 +8,8 @@ const Coin = () => {
   useFrame((state) => {
     const time = state.clock.elapsedTime;
 
-    // Animasyon - Yavaşça x ekseninde dönme
-    coinRef.current.rotation.x = 0.005 * time; // X ekseninde dönme
+    // Animasyon - Yavaşça y ekseninde dönme
+    coinRef.current.rotation.y = 0.005 * time; // Y ekseninde dönme
   });
 
   const textureLoader = new THREE.TextureLoader();
@@ -30,7 +30,7 @@ const Coin = () => {
         new THREE.MeshBasicMaterial({ color: 0xffff00 })  // Kenar kısımlarının gradient sarı malzemesi
       ];
 
-      const coinGeometry = new THREE.SphereGeometry(1, 32, 32); // Küresel geometri kullanarak madeni para şeklini oluşturuyoruz
+      const coinGeometry = new THREE.CylinderGeometry(1, 1, 0.2, 32); // Silindir geometrisi kullanarak madeni para şeklini oluşturuyoruz
       const coin = new THREE.Mesh(coinGeometry, coinMaterials);
       coinRef.current.add(coin);
     },
