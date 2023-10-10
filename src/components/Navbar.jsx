@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { ethers } from "ethers";
 import styled from "styled-components";
 
 const Container = styled.header`
@@ -69,6 +70,30 @@ const Button = styled.button`
 `;
 
 const Navbar = () => {
+
+  const [account, setAccount] = useState("");
+  const [balance, setBalance] = useState("");
+
+  const connectMetaMask = async () => {
+    try {
+      if (window.ethereum) {
+        const provider = new ethers.providers.Web3Provider(window.ethereum);
+        const signer = provider.getSigner();
+        const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+        const currentAccount = accounts[0];
+        setAccount(currentAccount);
+
+        const balance = await provider.getBalance(currentAccount);
+        setBalance(ethers.utils.formatEther(balance));
+      } else {
+        console.log("MetaMask not detected.");
+      }
+    } catch (error) {
+      console.error("MetaMask connection error:", error);
+    }
+  };
+
+
   return (
     <div style={{ zIndex: "1000" }}>
       <Container>
@@ -94,7 +119,7 @@ const Navbar = () => {
           </ListItem>
         </List>
         <Icons>
-          <Button>Connect Wallet</Button>
+          <Button onClick={connectMetaMask} >Connect Wallet</Button>
         </Icons>
       </Container>
     </div>
