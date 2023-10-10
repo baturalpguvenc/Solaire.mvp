@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import Atom from "../components/Atom"; // Atom bileşenini ekledim
+import * as THREE from "three";
 
 const Section = styled.div`
   height: 100vh;
@@ -133,11 +134,12 @@ const Img = styled.img`
 `;
 
 const Hero = () => {
+
   return (
     <Section>
-      <Navbar/>
+      <Navbar />
       <Container>
-        <div id={"home"}/>
+        <div id={"home"} />
         <Left>
           <Title>Solar. Bitcoin. Solve.</Title>
           <WhatWeDo>
@@ -152,15 +154,7 @@ const Hero = () => {
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={1.8}>
-                <MeshDistortMaterial
-                  color="#ffff56"
-                  attach="material"
-                  distort={0.5}
-                  speed={2}
-                />
-              </Sphere>
-              {/* Atom bileşenini ekliyoruz */}
+              <Sun />
               <Atom />
             </Suspense>
           </Canvas>
@@ -172,3 +166,13 @@ const Hero = () => {
 };
 
 export default Hero;
+
+const Sun = () => {
+  const color = new THREE.Color("#FDB813");
+  const geometry = new THREE.IcosahedronGeometry(2, 15);
+  const material = new THREE.MeshBasicMaterial({ color: color });
+  const sphere = new THREE.Mesh(geometry, material);
+  sphere.position.set(0, 0, 0);
+
+  return <primitive object={sphere} />;
+};
