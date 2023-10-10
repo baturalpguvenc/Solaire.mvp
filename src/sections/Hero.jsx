@@ -52,7 +52,7 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-family: "SatoshiMedium", sans-serif;
-  font-size: 68pt;
+  font-size: 70pt !important;
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
@@ -75,7 +75,7 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   font-weight: "bold";
-  color: #191970;
+  color: #083432;
   font-size: 12px;
 `;
 
@@ -141,11 +141,11 @@ const Hero = () => {
       <Container>
         <div id={"home"} />
         <Left>
-          <Title>Solar. Bitcoin. Solve.</Title>
+          <Title>About Sittaris</Title>
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
-          <Desc>Unleash Energy, Unchain Potential: Solar-Powered Blockchain, Lighting the Future!</Desc>
+          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emissions and eco-consciousness. </Desc>
           <Button>Learn More</Button>
         </Left>
         <Right>

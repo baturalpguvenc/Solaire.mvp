@@ -78,7 +78,7 @@ const Navbar = () => {
             <a href={"#home"}>Home</a>
           </ListItem>
           <ListItem>
-            <a href={"#about"}>About</a>
+            <a href={"#team"}>Team</a>
           </ListItem>
           <ListItem>
             <a href={"#participate"}>Participate</a>

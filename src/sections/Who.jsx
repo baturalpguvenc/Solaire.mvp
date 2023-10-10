@@ -88,7 +88,7 @@ const Who = () => {
   return (
     <Section>
       <Container>
-      <div id={"about"}/>
+      <div id={"team"}/>
         <Left>
           <Canvas camera={{ position: [5, 5, 5], fov: 25 }}>
             <Suspense fallback={null}>
@@ -106,9 +106,27 @@ const Who = () => {
             <Subtitle>Who we Are</Subtitle>
           </WhatWeDo>
           <Desc>
-            A creative group of blockchain company and developers with a passion for the
-            NATURE.
-          </Desc>
+  <div>
+    <strong>Burak Kartal - CEO and Co-founder</strong>{" "}
+    <a href="https://www.linkedin.com/in/burak-kartal-bb8165145/" target="_blank">
+      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    </a>
+  </div>
+  <div>
+    <strong>Tomris Kartal - COO and Co-founder</strong>{" "}
+    <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
+      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    </a>
+  </div>
+  <div>
+    <strong>Kerem Senel - CPO and Co-founder</strong>{" "}
+    <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
+      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    </a>
+  </div>
+</Desc>
+
+
           <Button>SOLAIRE</Button>
         </Right>
       </Container>
