@@ -77,10 +77,10 @@ const Navbar = () => {
   const connectMetaMask = async () => {
     try {
       if (window.ethereum) {
+        await window.ethereum.request({ method: "eth_requestAccounts" });
         const provider = new ethers.providers.Web3Provider(window.ethereum);
         const signer = provider.getSigner();
-        const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
-        const currentAccount = accounts[0];
+        const currentAccount = await signer.getAddress();
         setAccount(currentAccount);
 
         const balance = await provider.getBalance(currentAccount);
