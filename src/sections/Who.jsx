@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import Cube from "../components/Cube";
+import CoinAnimation from "../components/CoinAnimation";
 
 const Section = styled.div`
   height: 100vh;
@@ -93,12 +94,11 @@ const Who = () => {
             <Suspense fallback={null}>
               <ambientLight intensity={0.5} />
               <directionalLight position={[3, 2, 1]} />
-              <Cube />
+                <CoinAnimation />
               <OrbitControls enableZoom={false} autoRotate />
             </Suspense>
           </Canvas>
         </Left> 
-
         <Right>
           <Title><p style={{fontSize:"40px"}}>Think outside the Carbon Emission</p></Title>
           <WhatWeDo>
