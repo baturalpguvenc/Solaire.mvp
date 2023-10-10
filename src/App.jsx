@@ -13,7 +13,7 @@ const Container = styled.div`
   scroll-behavior: smooth;
   overflow-y: auto;
   scrollbar-width: none;
-  background: linear-gradient(135deg, #083432, #03AE5A, #00CF77, #C8F180, blue);
+  background: linear-gradient(135deg, #083432, #03AE5A, #00CF77, #FFF15F, #F6911D);
   color: white;
 
   h1 {

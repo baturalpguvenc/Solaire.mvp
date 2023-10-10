@@ -7,21 +7,32 @@ const Coin = () => {
 
   useFrame((state) => {
     const time = state.clock.elapsedTime;
-    
-    // Animasyon
-    coinRef.current.rotation.y += 0.01; // Y ekseninde dönme
-    coinRef.current.rotation.x += 0.010; // X ekseninde dönme
-    coinRef.current.rotation.z += 0.01; // Z ekseninde dönme
-  });
 
+    // Animasyon - Yavaşça x ekseninde dönme
+    coinRef.current.rotation.x = 0.005 * time; // X ekseninde dönme
+  });
 
   const textureLoader = new THREE.TextureLoader();
 
+  // Texture yükleme
   textureLoader.load(
-    "bengals.jpg",
+    "./public/img/sittaris.png",
     (texture) => {
       // Texture başarıyla yüklendiğinde yapılacak işlemler
-      console.log("Bengals texture yüklendi:", texture);
+      console.log("Texture yüklendi:", texture);
+
+      const coinMaterials = [
+        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
+        new THREE.MeshBasicMaterial({ map: texture }), // Ön yüzün texture'ı
+        new THREE.MeshLambertMaterial({ map: texture }), // Arka yüzün texture'ı
+        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xffff00 })  // Kenar kısımlarının gradient sarı malzemesi
+      ];
+
+      const coinGeometry = new THREE.SphereGeometry(1, 32, 32); // Küresel geometri kullanarak madeni para şeklini oluşturuyoruz
+      const coin = new THREE.Mesh(coinGeometry, coinMaterials);
+      coinRef.current.add(coin);
     },
     (xhr) => {
       // Yükleme sırasında gerçekleşen ilerleme durumunu takip etmek için kullanabilirsiniz
@@ -33,24 +44,9 @@ const Coin = () => {
     }
   );
 
-  // İlk resim için texture
-  const texture1 = new THREE.TextureLoader().load("");
-
-  // İkinci resim için texture
-  const texture2 = new THREE.TextureLoader().load("");
-
-  const coinMaterials = [
-    new THREE.MeshLambertMaterial({ map: texture1 }), // İlk yüzün texture'ı
-    new THREE.MeshLambertMaterial({ map: texture2 }), // İkinci yüzün texture'ı
-    new THREE.MeshLambertMaterial({ color: 0xffff00 }) // Diğer yüzlerin malzemesi
-  ];
-
-  const coinGeometry = new THREE.CylinderGeometry(1, 1, 0.2, 32); // Silindir geometrisi kullanarak madeni para şeklini oluşturuyoruz
-  const coin = new THREE.Mesh(coinGeometry, coinMaterials);
-
   return (
     <mesh ref={coinRef}>
-      <primitive object={coin} />
+      {/* Diğer işlemler */}
     </mesh>
   );
 };
