@@ -72,10 +72,10 @@ const Container = styled.div`
 
 export default function TimelineComponent() {
   const events = [
-    { date: "1 Sep 2023", description: "Project Start" },
-    { date: "5 Oct 2023", description: "Development" },
-    { date: "10 Nov 2023", description: "Marketing" },
-    { date: "15 Dec 2023", description: "Launch" },
+    { date: "Q4 2023", description: "The first two solar parks that will be equiped with bitcoin mining faclilities are already selected. " },
+    { date: "Q4 2023", description: " They are located in the Netherlands and will become active in Q4 of 2023." },
+    { date: "Q1 2024", description: "Marketing" },
+    { date: "Q4 2024", description: "Launch" },
   ];
 
   return (

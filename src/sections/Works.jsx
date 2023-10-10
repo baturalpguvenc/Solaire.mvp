@@ -5,7 +5,7 @@ import ProductDesign from "../components/ProductDesign";
 import WebDesign from "../components/WebDesign";
 import forest from "../assets/images/solaire-jpg.jpg";
 
-const data = ["Solar Power", "Hashrate", "Green BTC", "Energy Storage"];
+const data = ["Products"];
 
 const Section = styled.div`
   height: 100vh;
