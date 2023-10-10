@@ -149,7 +149,6 @@ const Hero = () => {
           <Button>Learn More</Button>
         </Left>
         <Right>
-    
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
