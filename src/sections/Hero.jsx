@@ -80,7 +80,7 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 22px !important;
   color: white;
   @media only screen and (max-width: 768px) {
     padding: 20px;
@@ -110,8 +110,8 @@ const Right = styled.div`
 `;
 
 const Img = styled.img`
-  width: 200px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -158,7 +158,7 @@ const Hero = () => {
               <Atom />
             </Suspense>
           </Canvas>
-          <Img src="./img/S.svg" />
+          <Img src="./img/FA_Sittaris-08.png" />
         </Right>
       </Container>
     </Section>
