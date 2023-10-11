@@ -161,7 +161,7 @@ const Hero = () => {
 
                 <div style={{ display: "flex" }}>
                     <div style={{ flex: 1 }}>
-                    <img src="https://i.ibb.co/0jZ3Q0H/Group-1.png" alt="Group-1" border="0" />
+                    <img src="bg-main.png" alt="Group-1" border="0" />
                     </div>
                     <div style={{ flex: 1 }}>
                     <img src="https://i.ibb.co/0jZ3Q0H/Group-1.png" alt="Group-1" border="0" />

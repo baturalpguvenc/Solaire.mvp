@@ -4,7 +4,8 @@ import {
   Geographies,
   Geography,
   Annotation,
-  ZoomableGroup
+  ZoomableGroup,
+  Marker
 } from "react-simple-maps";
 
 const Map = () => {
@@ -31,7 +32,7 @@ const Map = () => {
         }
       </Geographies>
       <Annotation
-        subject={[-28.9784, 41.0082]}  // İstanbul koordinatları
+        subject={[4.8972, 52.3778]} // Den Haag koordinatları
         dx={-90}
         dy={-30}
         connectorProps={{
@@ -40,24 +41,13 @@ const Map = () => {
           strokeLinecap: "round"
         }}
       >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Istanbul"}
+        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white" fontWeight="bold">
+          {"Den Haag"}
         </text>
       </Annotation>
-      <Annotation
-        subject={[4.8972, 52.3778]}  // Amsterdam koordinatları
-        dx={-90}
-        dy={-30}
-        connectorProps={{
-          stroke: "white",
-          strokeWidth: 2,
-          strokeLinecap: "round"
-        }}
-      >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white">
-          {"Amsterdam"}
-        </text>
-      </Annotation>
+      <Marker coordinates={[-74.006, 40.7128]}>
+        <circle r={8} fill="#F53" />
+      </Marker>
     </ComposableMap>
   );
 };
