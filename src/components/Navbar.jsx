@@ -116,7 +116,7 @@ const Navbar = () => {
   return (
     <div style={{ zIndex: "1000" }}>
       <Container>
-        <Logo src="./img/sittaris_son.png" />
+        <Logo src="./img/logo.svg" />
         <List>
         <ListItem>
             <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
@@ -125,6 +125,11 @@ const Navbar = () => {
               </Paper>
             </a>
           </ListItem>
+          <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
+          <Paper style={{ flex: 0.4, marginRight: '40px' }}>
+                Onepager
+              </Paper>
+    </a>
           <ListItem>
             <a href={"#home"}>Home</a>
           </ListItem>

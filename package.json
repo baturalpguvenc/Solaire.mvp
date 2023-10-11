@@ -21,7 +21,7 @@
     "ethers": "^6.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-simple-maps": "^1.0.0",
+    "react-simple-maps": "^3.0.0",
     "styled": "^1.0.0",
     "styled-components": "^6.0.8",
     "three": "^0.157.0"

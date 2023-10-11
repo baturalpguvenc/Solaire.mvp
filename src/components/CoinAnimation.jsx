@@ -2,42 +2,39 @@ import React, { useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 
-const Coin = () => {
-  const coinRef = useRef();
+const LogoSpinner = () => {
+  const logoRef = useRef();
 
   useFrame((state) => {
     const time = state.clock.elapsedTime;
 
-    // Animasyon - Yavaşça y ekseninde dönme
-    coinRef.current.rotation.y = 0.005 * time; // Y ekseninde dönme
+    // Logo'yu yavaşça y ekseninde döndürme
+    logoRef.current.rotation.y = 0.005 * time;
   });
 
   const textureLoader = new THREE.TextureLoader();
 
-  // Resmi yükledim.
+  // Logo resmini yükleyin
   textureLoader.load(
-    "./public/img/sittaris_son.png",
+    "./public/img/sittaris_son.png", // Logo resminizin yolunu ekleyin
     (texture) => {
-      // detaylar...
+      // Texture yüklendiğinde yapılacak işlemler
       console.log("Texture yüklendi:", texture);
 
-      const coinMaterials = [
-        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
-        new THREE.MeshBasicMaterial({ map: texture }), // Ön yüzün texture'ı
-        new THREE.MeshLambertMaterial({ map: texture }), // Arka yüzün texture'ı
-        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
-        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
-        new THREE.MeshBasicMaterial({ color: 0xFFA500 })  // Kenar kısımlarının gradient turuncu malzemesi
-      ];
+      const logoMaterial = new THREE.MeshBasicMaterial({
+        map: texture,
+        transparent: true, // Arka planın saydam olmasını sağlar
+        alphaTest: 0.5, // Daha iyi saydamlık için alpha test değeri
+        color: new THREE.Color(1, 1, 1), // Logonun rengini beyaz olarak ayarlar
+      });
 
-      //yüzler ve coin'in yan tarafı karışmış olabilir yorum satırlarında.
+      const logoGeometry = new THREE.PlaneGeometry(2, 2); // Logo'nun düzlem geometrisi
 
-      const coinGeometry = new THREE.CylinderGeometry(1, 1, 0.2, 32); // Silindir geometrisi kullanarak madeni para şeklini oluşturuyoruz
-      const coin = new THREE.Mesh(coinGeometry, coinMaterials);
-      coinRef.current.add(coin);
+      const logo = new THREE.Mesh(logoGeometry, logoMaterial);
+      logoRef.current.add(logo);
     },
     (xhr) => {
-      // Yükleme sırasında gerçekleşen ilerleme durumunu takip etmek için kullanabilirsiniz
+      // Yükleme sırasında ilerleme durumunu takip etmek için kullanabilirsiniz
       console.log((xhr.loaded / xhr.total) * 100 + "% tamamlandı");
     },
     (error) => {
@@ -47,10 +44,10 @@ const Coin = () => {
   );
 
   return (
-    <mesh ref={coinRef}>
+    <mesh ref={logoRef}>
       {/* Diğer işlemler */}
     </mesh>
   );
 };
 
-export default Coin;
+export default LogoSpinner;

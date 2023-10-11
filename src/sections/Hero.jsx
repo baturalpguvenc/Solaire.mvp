@@ -53,8 +53,9 @@ const Left = styled.div`
 const Title = styled.h1`
   font-family: "SatoshiMedium", sans-serif !important;
   font-size: 50pt !important;
+  line-height: 1.2 !important;
   text-align: justify !important;
-  text-justify: distribute-all-lines !important; /* Bu stil, tek satır başı olan metinlerde daha etkili olacaktır. */
+  text-justify: distribute-all-lines !important;
 
   @media only screen and (max-width: 768px) {
     text-align: justify !important;
@@ -62,12 +63,11 @@ const Title = styled.h1`
   }
 
   user-select: none;
-  -moz-user-select: none; /* Firefox */
-  -webkit-user-select: none; /* Safari and Chrome */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  margin-bottom: 20px; /* Adjust the margin as needed to increase space */
 `;
-
-
 
 const WhatWeDo = styled.div`
   display: flex;
@@ -75,15 +75,18 @@ const WhatWeDo = styled.div`
   gap: 10px;
 `;
 
+
 const Line = styled.img`
   height: 5px;
 `;
 
 const Subtitle = styled.h2`
-  font-weight: "bold";
+  font-weight: bold;
   color: #083432;
   font-size: 12px;
+  margin-bottom: 20px !important; /* Adjust the margin as needed to create more space */
 `;
+
 
 const Desc = styled.p`
   font-size: 22px !important;
@@ -156,13 +159,8 @@ const Hero = () => {
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
-          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission and eco-consciousness. Investment opportunities
-Become a sustainable bitcoin miner yourself. Your returns will in BTC and Euros.</Desc>
-          <Button>
-          <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
-      One Pager
-    </a>
-          </Button>
+          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</Desc>
+          
         </Left>
         <Right>
           <Canvas>
@@ -189,6 +187,9 @@ const Sun = () => {
   const material = new THREE.MeshBasicMaterial({ color: color });
   const sphere = new THREE.Mesh(geometry, material);
   sphere.position.set(0, 0, 0);
+
+  // Büyüklüğü artırmak için scale özelliğini kullanın
+  sphere.scale.set(1.5, 1.5, 1.5); // Örneğin, 1.5 kat büyüttük.
 
   return <primitive object={sphere} />;
 };
