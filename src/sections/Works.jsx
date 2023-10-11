@@ -7,6 +7,19 @@ import forest from "../assets/images/solaire-jpg.jpg";
 
 const data = ["Products"];
 
+const Button = styled.button`
+  background: linear-gradient(135deg, #000080, #008000);
+  color: white;
+  font-family: monospace !important;
+  font-weight: lighter;
+  width: 200px;
+  font-size: 26px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+
 const Section = styled.div`
   height: 100vh;
   scroll-snap-align: center;
@@ -65,21 +78,31 @@ const Works = () => {
       style={{ backgroundImage: `url("${forest}")`, backgroundSize: "cover" }}
     >
       <Section>
-        <Container>
-          <Left>
-            <List>
-              {data.map((item) => (
-                <ListItem key={item} text={item} onClick={() => setWork(item)}>
-                  {item}
-                </ListItem>
-              ))}
-            </List>
-          </Left>
-          <Right>
-            <ProductDesign />
-          </Right>
-        </Container>
-      </Section>
+  <Container>
+    <Left>
+      <List>
+        {data.map((item) => (
+          <ListItem key={item} text={item} onClick={() => setWork(item)}>
+            {item}
+          </ListItem>
+        ))}
+      </List>
+      <a href="https://qr.page/g/9kkbyDsTMe" target="_blank"
+      style={{ flex: 0.4, marginLeft: 'auto', marginRight: '20px !important' }}>
+  <Button style={{ flex: 0.4, marginLeft: 'auto', marginRight: '20px !important' }}>
+    Litepaper
+  </Button>
+</a>
+
+
+    </Left>
+    <Right>
+      <ProductDesign />
+      
+    </Right>
+  </Container>
+</Section>
+
     </div>
   );
 };

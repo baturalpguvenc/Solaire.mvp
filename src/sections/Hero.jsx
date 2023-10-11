@@ -157,7 +157,11 @@ const Hero = () => {
           </WhatWeDo>
           <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emissions and eco-consciousness. Investment opportunities
 Become a sustainable bitcoin miner yourself. Your returns will in BTC and Euros.</Desc>
-          <Button>More</Button>
+          <Button>
+          <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
+      One Pager
+    </a>
+          </Button>
         </Left>
         <Right>
           <Canvas>

@@ -127,7 +127,7 @@ const Who = () => {
 </Desc>
 
 
-          <Button>More</Button>
+          
         </Right>
       </Container>
     </Section>
