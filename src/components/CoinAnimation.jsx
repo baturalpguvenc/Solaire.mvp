@@ -16,7 +16,7 @@ const LogoSpinner = () => {
 
   // Logo resmini yükleyin
   textureLoader.load(
-    "./public/img/sittaris_son.png", // Logo resminizin yolunu ekleyin
+    "./public/img/sittaris_5.svg", // Logo resminizin yolunu ekleyin
     (texture) => {
       // Texture yüklendiğinde yapılacak işlemler
       console.log("Texture yüklendi:", texture);
