@@ -82,7 +82,8 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   font-weight: bold;
-  color: #083432;
+  color: #000000
+  ;
   font-size: 12px;
   margin-bottom: 20px !important; /* Adjust the margin as needed to create more space */
 `;
@@ -159,7 +160,7 @@ const Hero = () => {
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
-          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</Desc>
+          <Desc>The Sittaris Project is a new endeavor that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</Desc>
           
         </Left>
         <Right>
@@ -172,7 +173,7 @@ const Hero = () => {
               <Atom />
             </Suspense>
           </Canvas>
-          <Img src="./img/Sittaris_2.png" />
+          <Img src="./img/Sittaris_3.png" />
         </Right>
       </Container>
     </Section>
