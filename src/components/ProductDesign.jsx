@@ -7,12 +7,13 @@ const Desc = styled.div`
   display: flex;
   flex-direction: column; /* Stack children vertically */
   align-items: flex-start; /* Align children to the right */
-  width: 550px;
+  width: 700px;
   padding: 20px;
   background-color: white;
+  text-align: justify;
   border-radius: 30px;
   position: absolute;
-  bottom: 200px;
+  bottom: 120px;
   right: 100px;
   font-size: 20px;
   color: #F4F6F6;
@@ -40,7 +41,6 @@ const POEText = styled.p`
 
 const ProductsText = styled.p`
   font-size: 40px !important;
-  margin-left: 101px; 
   margin-bottom: -10px;
 
 `;
@@ -52,7 +52,7 @@ const ProductDesign = () => {
       <Canvas>
         <Suspense fallback={null}>
           <Stage environment="city" intensity={0.6}>
-            {/* <Solar color="purple" /> */} {/* Solar bileşenine color prop'u eklendi */}
+            {/* <Solar color="purple" /> /} {/ Solar bileşenine color prop'u eklendi */}
           </Stage>
           <OrbitControls enableZoom={false} autoRotate />
         </Suspense>
@@ -60,27 +60,29 @@ const ProductDesign = () => {
 
 
       <Desc>
-      <ProductsText> <b> Product </b> </ProductsText>
-  < POEText> <b> POE </b> </POEText>
-  Green Bitcoin Mining
-Sittaris generates the energy used for Bitcoin mining with 
-solar panels that are place on top of greenhouses. Trio 
-Investment BV is an investment company that invests in 
-sustainable energy in Europe and emerging markets. With 
-Sittaris they offer investment opportunities with returns in 
-bitcoin and euros.
+        <ProductsText> <b> Green Bitcoin Mining </b> </ProductsText>
+        <br />
+        
+        &nbsp; &nbsp;  &nbsp; Sittaris generates the energy used for Bitcoin mining with
+        solar panels that are place on top of greenhouses. Trio
+        Investment BV is an investment company that invests in
+        sustainable energy in Europe and emerging markets. With
+        Sittaris they offer investment opportunities with returns in
+        bitcoin and euros.
+        <br />
+        <br />
+        <ProductsText> <b> Proof of Energy (POE) </b> </ProductsText>
+        <br />
+        &nbsp; &nbsp;  &nbsp;  Sittaris generates the energy used for Bitcoin mining with solar panels that are place on top of greenhouses. Trio Investment BV is an investment
+        company that invests in sustainable energy in Europe and emerging markets. With Sittaris they offer investment opportunities with returns in bitcoin and euros.
 
-Proof of Energy (POE)
-Sittaris uses blockchain technology to introduce a trustless 
-framework known as "Proof of Energy" (“POE”) for 
-transparently verifying the source and quantity of energy 
-generated. Energy generated in our solar parks is sold back 
-to the grid or channeled into a green-mining setup to 
-generate Bitcoin.
+        Sittaris uses blockchain technology to introduce a trustless framework known as "Proof of Energy" (“POE”) for transparently verifying the source
+        and quantity of energy generated. Energy generated in our solar parks is sold back to the grid or channeled into a green-mining setup to generate Bitcoin.
 
-At the core of our operations, we not only achieve zero 
-emissions but also zero waste through the efficient use of 
-excess mining-generated heat in our greenhouses.
+        <br />
+        <br />
+        &nbsp; &nbsp;  &nbsp;At the core of our operations, we not only achieve zero emissions but also zero waste through the efficient use of excess mining-generated heat in our greenhouses.
+
 
       </Desc>
 

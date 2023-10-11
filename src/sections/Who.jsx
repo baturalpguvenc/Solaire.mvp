@@ -102,28 +102,31 @@ const Who = () => {
         <Right>
           <Title><p style={{fontSize:"60px"}}>Team</p></Title>
           <WhatWeDo>
-            
-            <Subtitle>Who we Are</Subtitle>
           </WhatWeDo>
           <Desc>
-  <div>
-    <strong>Burak Kartal - CEO and Co-founder</strong>{" "}
-    <a href="https://www.linkedin.com/in/burak-kartal-bb8165145/" target="_blank">
-      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-    </a>
-  </div>
-  <div>
-    <strong>Tomris Kartal - COO and Co-founder</strong>{" "}
-    <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
-      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-    </a>
-  </div>
-  <div>
-    <strong>Kerem Senel - CPO and Co-founder</strong>{" "}
-    <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
-      <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-    </a>
-  </div>
+          <div>
+  <strong>Burak Kartal</strong>
+  <br />CEO and Co-founder
+  <a href="https://www.linkedin.com/in/burak-kartal-bb8165145/" target="_blank">
+    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+  </a>
+</div>
+<div>
+  <strong>Tomris Kartal</strong>
+  <br />COO and Co-founder
+  <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
+    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+  </a>
+</div>
+<div>
+  <strong>Kerem Senel</strong>
+  <br />CPO and Co-founder
+  <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
+    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+  </a>
+</div>
+
+
 </Desc>
 
 
