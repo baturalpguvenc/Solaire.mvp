@@ -5,7 +5,7 @@ import ProductDesign from "../components/ProductDesign";
 import WebDesign from "../components/WebDesign";
 import forest from "../assets/images/solaire-jpg.jpg";
 
-const data = ["Product"];
+const data = ["Products"];
 
 const Button = styled.button`
   background: linear-gradient(135deg, #000080, #008000);
