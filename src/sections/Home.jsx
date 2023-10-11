@@ -154,8 +154,8 @@ const Hero = () => {
       <Navbar />
       <Container  >
         <div style={{ display: "flex",width:"100vw",maxWidth:"100vw" }}>
-          <div style={{ flex: 1,display:"flex",alignItems:"center",justifyContent:"center", padding: "170px 0 30px 0" }}>
-            <img src={brand2} alt="Group-1" border="0" style={{ width:"60%",maxWidth:"100vw" }} />
+          <div style={{ flex: 1,display:"flex",alignItems:"center",justifyContent:"center", padding: "90px 0 100px 0" }}>
+            <img src={brand2} alt="Group-1" border="0" style={{ width:"50%",maxWidth:"100vw" }} />
           </div>
   
         </div>
