@@ -14,21 +14,23 @@ const Coin = () => {
 
   const textureLoader = new THREE.TextureLoader();
 
-  // Texture yükleme
+  // Resmi yükledim.
   textureLoader.load(
-    "./public/img/sittaris.png",
+    "./public/img/sittaris_son.png",
     (texture) => {
-      // Texture başarıyla yüklendiğinde yapılacak işlemler
+      // detaylar...
       console.log("Texture yüklendi:", texture);
 
       const coinMaterials = [
-        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
         new THREE.MeshBasicMaterial({ map: texture }), // Ön yüzün texture'ı
         new THREE.MeshLambertMaterial({ map: texture }), // Arka yüzün texture'ı
-        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
-        new THREE.MeshBasicMaterial({ color: 0xffff00 }), // Kenar kısımlarının gradient sarı malzemesi
-        new THREE.MeshBasicMaterial({ color: 0xffff00 })  // Kenar kısımlarının gradient sarı malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xFFA500 }), // Kenar kısımlarının gradient turuncu malzemesi
+        new THREE.MeshBasicMaterial({ color: 0xFFA500 })  // Kenar kısımlarının gradient turuncu malzemesi
       ];
+
+      //yüzler ve coin'in yan tarafı karışmış olabilir yorum satırlarında.
 
       const coinGeometry = new THREE.CylinderGeometry(1, 1, 0.2, 32); // Silindir geometrisi kullanarak madeni para şeklini oluşturuyoruz
       const coin = new THREE.Mesh(coinGeometry, coinMaterials);

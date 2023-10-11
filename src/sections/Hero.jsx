@@ -150,8 +150,9 @@ const Hero = () => {
       <Container>
         <div id={"home"} />
         <Left>
-          <Title>Zero-waste 
-                Zero-emissions</Title>
+          <Title>Zero-emissions
+            Zero-waste 
+                </Title>
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
