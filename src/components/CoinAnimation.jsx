@@ -22,10 +22,10 @@ const LogoSpinner = () => {
       console.log("Texture yüklendi:", texture);
 
       const logoMaterial = new THREE.MeshBasicMaterial({
+        side: THREE.DoubleSide,
         map: texture,
-        transparent: true, // Arka planın saydam olmasını sağlar
-        alphaTest: 0.5, // Daha iyi saydamlık için alpha test değeri
-        color: new THREE.Color(1, 1, 1), // Logonun rengini beyaz olarak ayarlar
+        transparent: false, // Arka planın saydam olmasını sağlar
+        alphaTest: 0.2, // Daha iyi saydamlık için alpha test değeri
       });
 
       const logoGeometry = new THREE.PlaneGeometry(2, 2); // Logo'nun düzlem geometrisi

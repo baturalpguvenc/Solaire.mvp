@@ -22,10 +22,12 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  padding: 200px 0 0 0;
+  padding: 80px 0 0 0;
+  height: 100vh;
   box-sizing: border-box;
   scroll-snap-align: center;
   width: 100%;
+  overflow: hidden;
   
   
   justify-content: space-between;
