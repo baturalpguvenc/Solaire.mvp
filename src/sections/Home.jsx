@@ -160,7 +160,6 @@ const Hero = () => {
   
         </div>
 
-
         <div style={{ display: "flex" }}>
           <div style={{ flex: 1 }}>
             <img src={bg1} alt="Group-1" border="0" style={{ width:"100%",maxWidth:"100vw" }}/>
@@ -173,6 +172,7 @@ const Hero = () => {
       </Container>
     </Section>
   );
+
 };
 
 export default Hero;

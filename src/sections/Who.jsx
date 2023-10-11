@@ -107,7 +107,7 @@ const Who = () => {
           <div>
   <strong>Burak Kartal</strong>
   <br />CEO and Co-founder
-  <a href="https://www.linkedin.com/in/burak-kartal-bb8165145/" target="_blank">
+  <a href="https://www.linkedin.com/in/burak-kartal-47751041/" target="_blank">
     <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
   </a>
 </div>
