@@ -31,22 +31,12 @@ const Map = () => {
           ))
         }
       </Geographies>
-      <Annotation
-        subject={[4.8972, 52.3778]} // Den Haag koordinatları
-        dx={-90}
-        dy={-30}
-        connectorProps={{
-          stroke: "white",
-          strokeWidth: 2,
-          strokeLinecap: "round"
-        }}
-      >
-        <text x="-8" textAnchor="end" alignmentBaseline="middle" fill="white" fontWeight="bold">
+
+      <Marker coordinates={[5.6072, 52.6778]}>
+        <text x="0" y="-28" textAnchor="end" alignmentBaseline="middle" fill="white" fontWeight="bold">
           {"Den Haag"}
         </text>
-      </Annotation>
-      <Marker coordinates={[-74.006, 40.7128]}>
-        <circle r={8} fill="#F53" />
+        <circle r={8} fill="#FFF" />
       </Marker>
     </ComposableMap>
   );
