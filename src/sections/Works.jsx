@@ -87,12 +87,7 @@ const Works = () => {
           </ListItem>
         ))}
       </List>
-      <a href="https://qr.page/g/9kkbyDsTMe" target="_blank"
-      style={{ flex: 0.4, marginLeft: 'auto', marginRight: '20px !important' }}>
-  <Button style={{ flex: 0.4, marginLeft: 'auto', marginRight: '20px !important' }}>
-    Litepaper
-  </Button>
-</a>
+      
 
 
     </Left>

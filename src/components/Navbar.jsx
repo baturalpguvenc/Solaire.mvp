@@ -2,6 +2,25 @@ import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import styled from "styled-components";
 
+const Paper = styled.button`
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  border-radius: 32px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  transition: background-color 150ms ease-in-out;
+  position: relative;
+  top: -10px; /* Butonu 5 piksel yukarı kaldırır */
+
+  &:hover {
+    background-color: #00CF77; /* Yeşil renk üzerine gelindiğinde */
+  }
+`;
+
+
 const Container = styled.header`
   position: absolute;
   top: 0;
@@ -99,6 +118,13 @@ const Navbar = () => {
       <Container>
         <Logo src="./img/sittaris_son.png" />
         <List>
+        <ListItem>
+            <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+              <Paper style={{ flex: 0.4, marginRight: '10px' }}>
+                Litepaper
+              </Paper>
+            </a>
+          </ListItem>
           <ListItem>
             <a href={"#home"}>Home</a>
           </ListItem>
@@ -117,6 +143,7 @@ const Navbar = () => {
           <ListItem>
             <a href={"#contact"}>Contact</a>
           </ListItem>
+          
         </List>
         <Icons>
           <Button onClick={connectMetaMask} >Connect Wallet</Button>
@@ -124,6 +151,7 @@ const Navbar = () => {
       </Container>
     </div>
   );
+ 
 };
 
 export default Navbar;
