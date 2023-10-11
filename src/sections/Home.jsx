@@ -5,6 +5,9 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import Atom from "../components/Atom"; // Atom bileşenini ekledim
 import * as THREE from "three";
+import bg1 from "../assets/images/bg1.jpg";
+import bg2 from "../assets/images/bg2.jpg";
+import brand2 from "../assets/images/brand2.png";
 
 const Section = styled.div`
   height: 100vh;
@@ -19,7 +22,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  padding: 112px 96px 0;
+  padding: 200px 0 0 0;
   box-sizing: border-box;
   scroll-snap-align: center;
   width: 100%;
@@ -146,43 +149,43 @@ const Img = styled.img`
 
 const Hero = () => {
 
-    return (
-        <Section>
-            <Navbar />
-            <Container  >
-                   <div style={{ display: "flex" }}>
-                    <div style={{ flex: 1 }}>
-                    <img src="https://i.ibb.co/0jZ3Q0H/Group-1.png" alt="Group-1" border="0" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                    </div>
-                </div>
+  return (
+    <Section>
+      <Navbar />
+      <Container  >
+        <div style={{ display: "flex",width:"100vw",maxWidth:"100vw" }}>
+          <div style={{ flex: 1,display:"flex",alignItems:"center",justifyContent:"center", padding: "170px 0 30px 0" }}>
+            <img src={brand2} alt="Group-1" border="0" style={{ width:"60%",maxWidth:"100vw" }} />
+          </div>
+  
+        </div>
 
 
-                <div style={{ display: "flex" }}>
-                    <div style={{ flex: 1 }}>
-                    <img src="https://i.ibb.co/0jZ3Q0H/Group-1.png" alt="Group-1" border="0" />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                    <img src="https://i.ibb.co/0jZ3Q0H/Group-1.png" alt="Group-1" border="0" />
-                    </div>
-                </div>
-            </Container>
-        </Section>
-    );
+        <div style={{ display: "flex" }}>
+          <div style={{ flex: 1 }}>
+            <img src={bg1} alt="Group-1" border="0" style={{ width:"100%",maxWidth:"100vw" }}/>
+          </div>
+          <div style={{ flex: 1 }}>
+            <img src={bg2} alt="Group-1" border="0" style={{ width:"100%",maxWidth:"100vw" }} />
+
+          </div>
+        </div>
+      </Container>
+    </Section>
+  );
 };
 
 export default Hero;
 
 const Sun = () => {
-    const color = new THREE.Color("#FDB813");
-    const geometry = new THREE.IcosahedronGeometry(2, 15);
-    const material = new THREE.MeshBasicMaterial({ color: color });
-    const sphere = new THREE.Mesh(geometry, material);
-    sphere.position.set(0, 0, 0);
+  const color = new THREE.Color("#FDB813");
+  const geometry = new THREE.IcosahedronGeometry(2, 15);
+  const material = new THREE.MeshBasicMaterial({ color: color });
+  const sphere = new THREE.Mesh(geometry, material);
+  sphere.position.set(0, 0, 0);
 
-    // Büyüklüğü artırmak için scale özelliğini kullanın
-    sphere.scale.set(1.5, 1.5, 1.5); // Örneğin, 1.5 kat büyüttük.
+  // Büyüklüğü artırmak için scale özelliğini kullanın
+  sphere.scale.set(1.5, 1.5, 1.5); // Örneğin, 1.5 kat büyüttük.
 
-    return <primitive object={sphere} />;
+  return <primitive object={sphere} />;
 };

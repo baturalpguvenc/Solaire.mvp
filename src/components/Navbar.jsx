@@ -117,19 +117,52 @@ const Navbar = () => {
     <div style={{ zIndex: "1000" }}>
       <Container>
         <Logo src="./img/logo.svg" />
+      
         <List>
-        <ListItem>
+           <ListItem>
             <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
               <Paper style={{ flex: 0.4, marginRight: '10px' }}>
                 Litepaper
               </Paper>
             </a>
           </ListItem>
-          <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
-          <Paper style={{ flex: 0.4, marginRight: '40px' }}>
+
+          <ListItem>
+            <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
+              <Paper style={{ flex: 0.4, marginRight: '40px' }}>
                 Onepager
               </Paper>
-    </a>
+            </a>
+          </ListItem>
+
+
+          <ListItem>
+          </ListItem>
+
+          <ListItem>
+          </ListItem>
+          <ListItem>
+          </ListItem>
+
+          <ListItem>
+          </ListItem>
+          <ListItem>
+          </ListItem>
+
+          <ListItem>
+          </ListItem>
+          <ListItem>
+          </ListItem>
+
+          <ListItem>
+          </ListItem> <ListItem>
+          </ListItem>
+
+          <ListItem>
+          </ListItem> 
+
+
+
           <ListItem>
             <a href={"#home"}>Home</a>
           </ListItem>
@@ -148,15 +181,15 @@ const Navbar = () => {
           <ListItem>
             <a href={"#contact"}>Contact</a>
           </ListItem>
-          
+
         </List>
         <Icons>
-          <Button onClick={connectMetaMask} >Connect Wallet</Button>
+          <Button style={{ opacity: 0, cursor: "default" }} >Connect Wallet</Button>
         </Icons>
       </Container>
     </div>
   );
- 
+
 };
 
 export default Navbar;
