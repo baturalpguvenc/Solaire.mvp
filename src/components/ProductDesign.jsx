@@ -9,7 +9,7 @@ const Desc = styled.div`
   align-items: flex-start; /* Align children to the right */
   width: 700px;
   padding: 20px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 2.7) !important; /* Burada 0.7 opaklık değeri ayarlanmıştır */
   text-align: justify;
   border-radius: 30px;
   position: absolute;
@@ -28,8 +28,10 @@ const Desc = styled.div`
     left: 0;
     right: 0;
     margin: auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Mobil cihazlar için de aynı şeffaflık eklenmiştir */
   }
 `;
+
 
 const POEText = styled.p`
   font-family: "Montserrat", sans-serif !important;
@@ -62,18 +64,13 @@ const ProductDesign = () => {
         <ProductsText> <b> Green Bitcoin Mining </b> </ProductsText>
         <br />
 
-        &nbsp; &nbsp;  &nbsp; Sittaris generates the energy used for Bitcoin mining with
-        solar panels that are place on top of greenhouses. Trio
-        Investment BV is an investment company that invests in
-        sustainable energy in Europe and emerging markets. With
-        Sittaris they offer investment opportunities with returns in
-        bitcoin and euros.
+        Sittaris generates the energy used for Bitcoin mining with solar panels that are placed on top of our greenhouses and we have over 1 GWp in development across Europe and emerging markets, making us a sustainable force in the crypto mining industry. Sittaris offers investing opportunities in an innovative approach, with returns in Bitcoin (BTC) while supporting a greener future for cryptocurrency mining.
         <br />
         <br />
         <ProductsText> <b> Proof of Energy </b> </ProductsText>
 
         <br />
-        &nbsp; &nbsp;  &nbsp;  Sittaris generates the energy used for Bitcoin mining with solar panels that are place on top of greenhouses. Trio Investment BV is an investment
+        Sittaris generates the energy used for Bitcoin mining with solar panels that are place on top of greenhouses. Trio Investment BV is an investment
         company that invests in sustainable energy in Europe and emerging markets. With Sittaris they offer investment opportunities with returns in bitcoin and euros.
 
         Sittaris uses blockchain technology to introduce a trustless framework known as "Proof of Energy" (“POE”) for transparently verifying the source
@@ -81,7 +78,7 @@ const ProductDesign = () => {
 
         <br />
         <br />
-        &nbsp; &nbsp;  &nbsp;At the core of our operations, we not only achieve zero emissions but also zero waste through the efficient use of excess mining-generated heat in our greenhouses.
+        At the core of our operations, we not only achieve zero emissions but also zero waste through the efficient use of excess mining-generated heat in our greenhouses.
 
 
       </Desc>
