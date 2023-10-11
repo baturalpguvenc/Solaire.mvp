@@ -2,6 +2,7 @@ import styled from "styled-components";
 import TimeLine from "./sections/TimeLine";
 import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
+import Home from "./sections/Home";
 import Who from "./sections/Who";
 import Works from "./sections/Works";
 import Participate from "./sections/Participate";
@@ -52,6 +53,10 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <Home>
+        <h1>HEADLINES</h1>
+      </Home>
+
       <Hero>
         <h1>HEADLINES</h1>
       </Hero>
