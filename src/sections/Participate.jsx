@@ -2,7 +2,7 @@ import styled from "styled-components";
 import React, { useState } from "react";
 //import forest from "../assets/images/logo.png";
 
-import SolarPanel from "../assets/images/solar-panel.png" 
+import SolarPanel from "../assets/images/parti.png" 
 
 const Section = styled.div`
   height: 100vh;
