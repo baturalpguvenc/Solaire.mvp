@@ -119,7 +119,7 @@ const Right = styled.div`
 `;
 
 const Img = styled.img`
-  width: 400px;
+  width: 300px;
   height: 500px;
   object-fit: contain;
   position: absolute;
@@ -150,13 +150,13 @@ const Hero = () => {
       <Container>
         <div id={"home"} />
         <Left>
-          <Title>Zero-emissions
+          <Title>Zero-emission
             Zero-waste 
                 </Title>
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
-          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emissions and eco-consciousness. Investment opportunities
+          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission and eco-consciousness. Investment opportunities
 Become a sustainable bitcoin miner yourself. Your returns will in BTC and Euros.</Desc>
           <Button>
           <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
@@ -174,7 +174,7 @@ Become a sustainable bitcoin miner yourself. Your returns will in BTC and Euros.
               <Atom />
             </Suspense>
           </Canvas>
-          <Img src="./img/FA_Sittaris-08.png" />
+          <Img src="./img/Sittaris_2.png" />
         </Right>
       </Container>
     </Section>
