@@ -31,10 +31,12 @@ const Desc = styled.div`
 `;
 
 const POEText = styled.p`
+  font-family: "Montserrat", sans-serif !important;
   font-size: 30px !important;
-  color: #03ae5a;
+  color: #03ae5a !important;
   align-self: center; /* Center "POE" text vertically */
 `;
+
 
 const ProductsText = styled.p`
   font-size: 40px !important;

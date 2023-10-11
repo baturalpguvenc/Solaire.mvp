@@ -51,10 +51,14 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-family: "SatoshiMedium", sans-serif;
-  font-size: 70pt !important;
+  font-family: "SatoshiMedium", sans-serif !important;
+  font-size: 50pt !important;
+  text-align: justify !important;
+  text-justify: distribute-all-lines !important; /* Bu stil, tek satır başı olan metinlerde daha etkili olacaktır. */
+
   @media only screen and (max-width: 768px) {
-    text-align: center;
+    text-align: justify !important;
+    text-justify: distribute-all-lines;
   }
 
   user-select: none;
@@ -62,6 +66,8 @@ const Title = styled.h1`
   -webkit-user-select: none; /* Safari and Chrome */
   -ms-user-select: none; /* Internet Explorer/Edge */
 `;
+
+
 
 const WhatWeDo = styled.div`
   display: flex;
@@ -82,15 +88,18 @@ const Subtitle = styled.h2`
 const Desc = styled.p`
   font-size: 22px !important;
   color: white;
+  text-align: justify !important;
+  line-height: 1.3 !important; /* Metinler arasındaki boşluğu daraltmak için line-height değerini ayarlayabilirsiniz. Deneme yanılma yoluyla doğru değeri bulabilirsiniz. Örneğin, 1.2 genellikle iyi bir başlangıçtır. */
+
   @media only screen and (max-width: 768px) {
     padding: 20px;
-    text-align: center;
   }
 `;
 
 const Button = styled.button`
   background: linear-gradient(135deg, #000080, #008000);
   color: white;
+  font-family: monospace !important;
   font-weight: lighter;
   width: 200px;
   font-size: 26px;
@@ -141,12 +150,14 @@ const Hero = () => {
       <Container>
         <div id={"home"} />
         <Left>
-          <Title>About Sittaris</Title>
+          <Title>Zero-waste 
+                Zero-emissions</Title>
           <WhatWeDo>
             <Subtitle>Solar Powered Blockchain</Subtitle>
           </WhatWeDo>
-          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emissions and eco-consciousness. </Desc>
-          <Button>Learn More</Button>
+          <Desc>The Sittaris Project is a new endeavor by Trio Investment BV that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emissions and eco-consciousness. Investment opportunities
+Become a sustainable bitcoin miner yourself. Your returns will in BTC and Euros.</Desc>
+          <Button>More</Button>
         </Left>
         <Right>
           <Canvas>

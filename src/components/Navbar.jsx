@@ -21,7 +21,7 @@ const Logo = styled.img`
   user-select: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
-  max-height: 64px;
+  max-height: 100px !important;
 `;
 
 const List = styled.nav`
@@ -97,7 +97,7 @@ const Navbar = () => {
   return (
     <div style={{ zIndex: "1000" }}>
       <Container>
-        <Logo src="./img/logo_textmark.svg" />
+        <Logo src="./img/sittaris_son.png" />
         <List>
           <ListItem>
             <a href={"#home"}>Home</a>

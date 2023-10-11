@@ -40,6 +40,7 @@ const Event = styled.div`
   margin: 10px 0;
   text-align: center;
   color: #fff;
+  font-size: 14px !important; /* Yazı fontunu küçült */
 `;
 
 const Date = styled.div`
@@ -52,7 +53,8 @@ const Date = styled.div`
   padding: 5px 10px;
   border-radius: 5px;
   display: flex;
-  align-items: "center";
+  align-items: center;
+  font-size: 12px !important; /* Yazı fontunu küçült */
 `;
 
 const Container = styled.div`
@@ -94,45 +96,45 @@ export default function TimelineComponent() {
             }}
           >
             {events.map((event, i) => {
-              return (
-                <TimelineItem>
-                  <TimelineOppositeContent
-                    style={{ fontFamily: "SatoshiMedium, sans-serif" }}
-                    color="text.secondary"
-                  >
-                    <p>{event.description}</p>
-                  </TimelineOppositeContent>
+  return (
+    <TimelineItem key={i}>
+      <TimelineOppositeContent
+        style={{ fontFamily: "SatoshiMedium, sans-serif", fontSize: "10px !important" }} // Metin fontunu burada güncelle
+        color="text.secondary"
+      >
+        <p>{event.description}</p>
+      </TimelineOppositeContent>
 
-                  <TimelineSeparator
-                    style={{ marginTop: "20px", marginBottom: "-20px" }}
-                  >
-                    <div
-                      style={{
-                        width: "10px",
-                        height: "10px",
-                        backgroundColor: "white",
-                        borderRadius: "50%",
-                      }}
-                    />
-                    {events.length - 1 !== i && (
-                      <div
-                        style={{
-                          width: "1px",
-                          height: "100%",
-                          backgroundColor: "white",
-                        }}
-                      />
-                    )}
-                  </TimelineSeparator>
+      <TimelineSeparator
+        style={{ marginTop: "30px !important", marginBottom: "-30px !important" }}
+      >
+        <div
+          style={{
+            width: "10px !important",
+            height: "10px !important",
+            backgroundColor: "white",
+            borderRadius: "50%",
+          }}
+        />
+        {events.length - 1 !== i && (
+          <div
+            style={{
+              width: "1px",
+              height: "100%",
+              backgroundColor: "darkGreen",
+            }}
+          />
+        )}
+      </TimelineSeparator>
 
-                  <TimelineContent
-                    style={{ fontFamily: "SatoshiMedium, sans-serif" }}
-                  >
-                    <p>{event.date}</p>
-                  </TimelineContent>
-                </TimelineItem>
-              );
-            })}
+      <TimelineContent
+        style={{ fontFamily: "SatoshiMedium, sans-serif", fontSize: "20px !important" }} // Metin fontunu burada güncellemeye çalıştım
+      >
+        <p>{event.date}</p>
+      </TimelineContent>
+    </TimelineItem>
+  );
+})}
           </div>
         </div>
       </Container>

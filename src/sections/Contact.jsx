@@ -82,10 +82,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_id",
-        "template_id",
+        "YOUR_SERVICE_ID", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
+        "YOUR_TEMPLATE_ID", // Buraya EmailJS servisinizin şablon ID'sini buraya ekle
         ref.current,
-        "public_key"
+        "YOUR_USER_ID" // Buraya EmailJS servisinizin kullanıcı ID'sini ekle
       )
       .then(
         (result) => {

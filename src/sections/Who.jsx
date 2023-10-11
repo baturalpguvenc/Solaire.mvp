@@ -65,7 +65,7 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
-  font-size: 24px;
+  font-size: 22px !important;
   color: black;
   font-weight: lighter;
 `;
@@ -100,7 +100,7 @@ const Who = () => {
           </Canvas>
         </Left> 
         <Right>
-          <Title><p style={{fontSize:"40px"}}>Think outside the Carbon Emission</p></Title>
+          <Title><p style={{fontSize:"60px"}}>Team</p></Title>
           <WhatWeDo>
             
             <Subtitle>Who we Are</Subtitle>
@@ -127,7 +127,7 @@ const Who = () => {
 </Desc>
 
 
-          <Button>SOLAIRE</Button>
+          <Button>More</Button>
         </Right>
       </Container>
     </Section>
