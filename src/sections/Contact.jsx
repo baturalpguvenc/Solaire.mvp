@@ -117,7 +117,7 @@ const Contact = () => {
     /* emailjs.init("z_oOBlM3S9f3AaIxZ"); */
     emailjs
       .sendForm(
-        "service_etkgrrf", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
+        "service_ntsnxvu", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
         "template_hbainek", // Buraya EmailJS servisinizin şablon ID'sini buraya ekle
         ref.current,
         "z_oOBlM3S9f3AaIxZ" // Buraya EmailJS servisinizin kullanıcı ID'sini ekle
