@@ -13,7 +13,6 @@ const Paper = styled.button`
   font-size: 16px;
   transition: background-color 150ms ease-in-out;
   position: relative;
-  top: -10px; /* Butonu 5 piksel yukarı kaldırır */
 
   &:hover {
     background-color: #00CF77; /* Yeşil renk üzerine gelindiğinde */
@@ -29,10 +28,14 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px clamp(24px, 5%, 96px);
+  padding: 12px clamp(24px, 5%, 96px);
   box-sizing: border-box;
   background: linear-gradient(to bottom, #20202090, #20202020);
   backdrop-filter: blur(8px);
+
+  @media (max-width: 768px) {
+    padding: 6px clamp(24px, 5%, 96px);
+  }
 `;
 
 const Logo = styled.img`
@@ -40,12 +43,17 @@ const Logo = styled.img`
   user-select: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
-  max-height: 100px !important;
+  max-height: 60px !important;
+
+  @media (max-width: 768px) {
+    max-height: 40px !important;
+  }
 `;
 
 const List = styled.nav`
   display: flex;
   gap: 20px;
+  align-items:center;
   font-family: "Montserrat", sans-serif;
   @media only screen and (max-width: 768px) {
     display: none;

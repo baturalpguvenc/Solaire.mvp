@@ -55,8 +55,9 @@ font-family: "SatoshiMedium", sans-serif !important;
   align-items: center;
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 0px;
     justify-content: center;
+    flex-direction:column;
   }
 `;
 
@@ -67,6 +68,10 @@ font-family: "SatoshiMedium", sans-serif !important;
   display: flex;
   flex-direction: column;
   gap: 20px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top:48px;
+  }
 `;
 
 const ListItem = styled.li`
@@ -78,7 +83,27 @@ const ListItem = styled.li`
 
 const Right = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    display:hidden;
+  }
 `;
+
+const Paragraph = styled.p`
+font-size: 0px !important;
+line-height:20px !important;
+background:rgba(255,255,255,0.2);
+backdrop-filter: blur(8px);
+margin:16px;
+border-radius:6px;
+padding:0px;
+color:#fff;
+
+@media only screen and (max-width: 768px) {
+  font-size: 14px !important;
+  padding:4px;
+}
+`
 
 const Works = () => {
   const [work, setWork] = useState("Web Design");
@@ -87,25 +112,46 @@ const Works = () => {
       style={{ backgroundImage: `url("${forest}")`, backgroundSize: "cover" }}
     >
       <Section>
-  <Container>
-    <Left>
-      <List>
-        {data.map((item) => (
-          <ListItem key={item} text={item} onClick={() => setWork(item)}>
-            {item}
-          </ListItem>
-        ))}
-      </List>
-      
+        <Container>
+          <Left>
+            <List>
+              {data.map((item) => (
+                <ListItem key={item} text={item} onClick={() => setWork(item)}>
+                  {item}
+                </ListItem>
+              ))}
+            </List>
+            <Paragraph>
+              <b> Green Bitcoin Mining </b>
+              <br />
+
+              Sittaris generates the energy used for Bitcoin mining with solar panels that are placed on top of our greenhouses and we have over 1 GWp in development across Europe and emerging markets, making us a sustainable force in the crypto mining industry. Sittaris offers investing opportunities in an innovative approach, with returns in Bitcoin (BTC) while supporting a greener future for cryptocurrency mining.
+              <br />
+              <br />
+              <b> Proof of Energy </b>
+
+              <br />
+              Sittaris generates the energy used for Bitcoin mining with solar panels that are place on top of greenhouses. Trio Investment BV is an investment
+              company that invests in sustainable energy in Europe and emerging markets. With Sittaris they offer investment opportunities with returns in bitcoin and euros.
+
+              Sittaris uses blockchain technology to introduce a trustless framework known as "Proof of Energy" (“POE”) for transparently verifying the source
+              and quantity of energy generated. Energy generated in our solar parks is sold back to the grid or channeled into a green-mining setup to generate Bitcoin.
+
+              <br />
+              <br />
+              At the core of our operations, we not only achieve zero emissions but also zero waste through the efficient use of excess mining-generated heat in our greenhouses.
 
 
-    </Left>
-    <Right>
-      <ProductDesign />
-      
-    </Right>
-  </Container>
-</Section>
+            </Paragraph>
+
+
+          </Left>
+          <Right>
+            <ProductDesign />
+
+          </Right>
+        </Container>
+      </Section>
 
     </div>
   );

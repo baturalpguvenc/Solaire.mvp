@@ -18,9 +18,7 @@ font-family: "SatoshiMedium", sans-serif !important;
   justify-content: space-between;
   display: flex;
   flex-direction: row;
-  @media only screen and (max-width: 768px) {
-    height: 200vh;
-  }
+
 `;
 
 const Container = styled.div`
@@ -41,6 +39,7 @@ font-family: "SatoshiMedium", sans-serif !important;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
   }
 `;
 
@@ -163,28 +162,43 @@ const Img = styled.img`
   }
 `;
 
+const ImgContainer = styled.div`
+display:flex;
+
+@media (max-width: 768px) {
+  flex-direction:column
+}
+`
+const Divide = styled.div`
+flex:1;
+display:flex;
+align-items:center;
+justify-content:center;
+padding: 90px 0 100px 0;
+`
+
 const Hero = () => {
 
   return (
     <Section>
       <Navbar />
       <Container  >
-        <div style={{ display: "flex",width:"100vw",maxWidth:"100vw" }}>
-          <div style={{ flex: 1,display:"flex",alignItems:"center",justifyContent:"center", padding: "90px 0 100px 0" }}>
-            <img src={brand2} alt="Group-1" border="0" style={{ width:"50%",maxWidth:"100vw" }} />
-          </div>
-  
+        <div style={{ display: "flex", width: "100vw", maxWidth: "100vw" }}>
+          <Divide>
+            <img src={brand2} alt="Group-1" border="0" style={{ width: "50%", maxWidth: "100vw" }} />
+          </Divide>
+
         </div>
 
-        <div style={{ display: "flex" }}>
+        <ImgContainer>
           <div style={{ flex: 1 }}>
-            <img src={bg1} alt="Group-1" border="0" style={{ width:"100%",maxWidth:"100vw" }}/>
+            <img src={bg1} alt="Group-1" border="0" style={{ width: "100%", maxWidth: "100vw" }} />
           </div>
           <div style={{ flex: 1 }}>
-            <img src={bg2} alt="Group-1" border="0" style={{ width:"100%",maxWidth:"100vw" }} />
+            <img src={bg2} alt="Group-1" border="0" style={{ width: "100%", maxWidth: "100vw" }} />
 
           </div>
-        </div>
+        </ImgContainer>
       </Container>
     </Section>
   );

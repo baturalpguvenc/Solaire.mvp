@@ -35,6 +35,7 @@ const Participate = () => {
     <div id={"participate"} style={{ backgroundImage: `url("${SolarPanel}")`, backgroundSize: "cover", backgroundPosition:"center" }}>
       <Section>
         <div >
+          
           </div>
       </Section>
     </div>

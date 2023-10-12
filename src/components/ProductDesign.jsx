@@ -28,7 +28,9 @@ const Desc = styled.div`
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(255, 255, 255, 0.7); /* Mobil cihazlar için de aynı şeffaflık eklenmiştir */
+    font-size: 18px !important;
+    opacity:0;
+    background: transparent;
   }
 `;
 
@@ -44,6 +46,10 @@ const POEText = styled.p`
 const ProductsText = styled.p`
   font-size: 30px !important;
   margin-bottom: -10px;
+
+  @media (max-width: 768px) {
+    font-size: 24px !important;
+  }
 `;
 
 const ProductDesign = () => {

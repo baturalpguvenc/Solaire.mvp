@@ -29,7 +29,7 @@ font-family: "SatoshiMedium", sans-serif !important;
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    width: 100%;
+    padding: 2px 16px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -61,6 +61,7 @@ const Title = styled.h1`
   @media only screen and (max-width: 768px) {
     text-align: justify !important;
     text-justify: distribute-all-lines;
+    font-size: 30pt !important;
   }
 
   user-select: none;
@@ -78,7 +79,6 @@ font-family: "SatoshiMedium", sans-serif !important;
   gap: 10px;
 `;
 
-
 const Line = styled.img`
 font-family: "SatoshiMedium", sans-serif !important;
 
@@ -93,6 +93,11 @@ font-family: "SatoshiMedium", sans-serif !important;
   ;
   font-size: 12px;
   margin-bottom: 20px !important; /* Adjust the margin as needed to create more space */
+
+  @media (max-width: 768px) {
+    font-size: 24px !important;
+    line-height: 1.6 !important; 
+  }
 `;
 
 
@@ -105,7 +110,9 @@ font-family: "SatoshiMedium", sans-serif !important;
   line-height: 1.3 !important; /* Metinler arasındaki boşluğu daraltmak için line-height değerini ayarlayabilirsiniz. Deneme yanılma yoluyla doğru değeri bulabilirsiniz. Örneğin, 1.2 genellikle iyi bir başlangıçtır. */
 
   @media only screen and (max-width: 768px) {
-    padding: 20px;
+    padding: 0px;
+    font-size: 18px !important;
+    line-height: 1.6 !important; 
   }
 `;
 
@@ -132,6 +139,9 @@ font-family: "SatoshiMedium", sans-serif !important;
   @media only screen and (max-width: 768px) {
     flex: 1;
     width: 100%;
+    margin-top:60px;
+    margin-left:-50px;
+    margin-right:-50px;
   }
 `;
 
