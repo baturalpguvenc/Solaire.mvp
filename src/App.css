@@ -24,6 +24,9 @@
   src: local("TerminaMedium"), url("./assets/fonts/TerminaMedium.otf") format("opentype");
 }
 
+* {
+  font-family: "SatoshiMedium",sans-serif!important;
+}
 
 h1 {
   font-family: "SatoshiBlack", sans-serif;
