@@ -7,6 +7,8 @@ import Who from "./sections/Who";
 import Works from "./sections/Works";
 import Participate from "./sections/Participate";
 import './App.css';
+import Roadmap from "./sections/roadmap";
+import Navbar from "./components/Navbar";
 
 const Container = styled.div`
   height: 100svh;
@@ -17,33 +19,6 @@ const Container = styled.div`
   background: linear-gradient(135deg, #083432, #03AE5A, #00CF77, #FFF15F, #F6911D);
   color: white;
 
-  h1 {
-    font-family: "SatoshiBlack", sans-serif;
-    font-size: 110pt;
-    line-height: 99pt;
-    /* letter-spacing: -10pt; */
-    text-transform: uppercase;
-  }
-
-  h2 {
-    font-family: "TerminaDemi", sans-serif;
-    font-size: 20pt;
-    line-height: 48pt;
-    text-transform: uppercase;
-  }
-
-  h3 {
-    font-family: "TerminaMedium", sans-serif;
-    font-size: 26pt;
-    line-height: 31.2pt;
-    text-transform: none;
-  }
-
-  p {
-    font-family: "SatoshiMedium", sans-serif;
-    font-size: 26pt;
-    line-height: 33.8pt;
-  }
 
   &::-webkit-scrollbar {
     display: none;
@@ -53,6 +28,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
+      <Navbar />
       <Home>
         <h1>HEADLINES</h1>
       </Home>
@@ -72,6 +48,8 @@ function App() {
       <Works>
         <h3>2nd SUB-HEADERS OR HIGHLIGHTS</h3>
       </Works>
+
+      <Roadmap/>
 
       {/* <TimeLine>
       <h1>HEADLINES</h1>

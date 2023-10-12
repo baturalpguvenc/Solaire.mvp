@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* File: font.css */
 @font-face {
   font-family: "Montserrat";
@@ -26,21 +31,22 @@
 
 * {
   font-family: "SatoshiMedium",sans-serif!important;
+  outline: none;
 }
 
 h1 {
   font-family: "SatoshiBlack", sans-serif;
-  font-size: 110pt;
-  line-height: 99pt;
+  
   /* letter-spacing: -10pt; */
   text-transform: uppercase;
+  @apply text-3xl  md:text-7xl 
 }
 
 h2 {
   font-family: "TerminaDemi", sans-serif;
-  font-size: 20pt;
-  line-height: 48pt;
+   
   text-transform: uppercase;
+  @apply text-xl md:text-3xl leading-relaxed
 }
 
 h3 {
@@ -52,9 +58,9 @@ h3 {
 
 p {
   font-family: "SatoshiMedium", sans-serif;
-  font-size: 26pt;
-  line-height: 33.8pt;
+  @apply text-sm md:text-2xl leading-relaxed font-normal
 }
+
 
 a {
   text-decoration: none;

@@ -15,7 +15,6 @@ const Button = styled.button`
   font-weight: lighter;
   width: 200px;
   font-size: 26px;
-  padding: 20px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
@@ -108,20 +107,20 @@ color:#fff;
 const Works = () => {
   const [work, setWork] = useState("Web Design");
   return (
-    <div id={"works"}
+    <div id={"works"} className=""
       style={{ backgroundImage: `url("${forest}")`, backgroundSize: "cover" }}
     >
-      <Section>
+      <Section className="pt-6 md:pt-20 overflow-y-auto">
         <Container>
           <Left>
             <List>
               {data.map((item) => (
-                <ListItem key={item} text={item} onClick={() => setWork(item)}>
+                <h1 className="text-white" key={item} text={item} onClick={() => setWork(item)}>
                   {item}
-                </ListItem>
+                </h1>
               ))}
             </List>
-            <Paragraph>
+            <Paragraph className="!text-xs md:text-sm">
               <b> Green Bitcoin Mining </b>
               <br />
 
@@ -146,7 +145,7 @@ const Works = () => {
 
 
           </Left>
-          <Right>
+          <Right className="hidden md:block">
             <ProductDesign />
 
           </Right>

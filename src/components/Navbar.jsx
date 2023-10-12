@@ -33,7 +33,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 12px clamp(24px, 5%, 96px);
+  padding: 8px clamp(24px, 5%, 96px);
   box-sizing: border-box;
   background: linear-gradient(to bottom, #20202090, #20202020);
   backdrop-filter: blur(8px);
@@ -48,10 +48,10 @@ const Logo = styled.img`
   user-select: none;
   -webkit-user-drag: none;
   -webkit-touch-callout: none;
-  max-height: 60px !important;
+  max-height: 70px !important;
 
   @media (max-width: 768px) {
-    max-height: 40px !important;
+    max-height: 44px !important;
   }
 `;
 
@@ -60,7 +60,7 @@ const List = styled.nav`
   gap: 20px;
   align-items:center;
   font-family: "Montserrat", sans-serif;
-  
+  font-weight: 600;
   @media only screen and (max-width: 768px) {
     gap: 10px;
   }
@@ -155,9 +155,9 @@ const Navbar = () => {
       <Container>
         <Logo src="./img/logo.svg" />
       
-        <List>
+        <List className="gap-12 felx justify-between w-2/3">
            <ListItem>
-            <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
+            <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" >
               <Paper>
                 Litepaper
               </Paper>
@@ -171,32 +171,6 @@ const Navbar = () => {
               </Paper>
             </a>
           </ListItem>
-
-
-          <ListItem2>
-          </ListItem2>
-
-          <ListItem2>
-          </ListItem2>
-          <ListItem2>
-          </ListItem2>
-
-          <ListItem2>
-          </ListItem2>
-          <ListItem2>
-          </ListItem2>
-
-          <ListItem2>
-          </ListItem2>
-          <ListItem2>
-          </ListItem2>
-
-          <ListItem2>
-          </ListItem2> <ListItem2>
-          </ListItem2>
-
-          <ListItem2>
-          </ListItem2> 
 
 
 

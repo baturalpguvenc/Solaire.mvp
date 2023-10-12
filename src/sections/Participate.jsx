@@ -16,7 +16,6 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -65,23 +64,24 @@ const Participate = () => {
   return (
     <div
       id={"participate"}
+      className="h-screen w-screen  bg-black flex flex-col X justify-start items-center"
       style={{
         backgroundImage: `url("${SolarPanel}")`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
     >
-      <Section style={{
+      <Section className="pt-20 md:pt-32 !justify-start" style={{
         display: "flex",
         flexDirection: "column",
         gap: "20px",
         color: 'white'
 
       }}>
-        <Container className="" style={{
+        <Container className="flex w-full" style={{
           fontWeight: '300',
         }}>
-          <Head >Participate</Head>
+          <h1 >Participate</h1>
           <H>Participate in Green BTC Mining</H>
           <P>
             You can participate in the future expansion of the Sittaris network.

@@ -114,7 +114,7 @@ const Who = () => {
           </Canvas>
         </Left> 
         <Right>
-          <Title><p style={{fontSize:"60px"}}>Team</p></Title>
+          <h1>Team</h1>
           <WhatWeDo>
           </WhatWeDo>
           <Desc>

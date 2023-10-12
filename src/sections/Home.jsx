@@ -24,7 +24,6 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Container = styled.div`
 font-family: "SatoshiMedium", sans-serif !important;
 
-  padding: 80px 0 0 0;
   height: 100vh;
   box-sizing: border-box;
   scroll-snap-align: center;
@@ -181,8 +180,8 @@ const Hero = () => {
 
   return (
     <Section>
-      <Navbar />
-      <Container  >
+      
+      <Container  className="pt-6 md:pt-20 " >
         <div style={{ display: "flex", width: "100vw", maxWidth: "100vw" }}>
           <Divide>
             <img src={brand2} alt="Group-1" border="0" style={{ width: "50%", maxWidth: "100vw" }} />
@@ -190,7 +189,7 @@ const Hero = () => {
 
         </div>
 
-        <ImgContainer>
+        <ImgContainer className="-mt-16">
           <div style={{ flex: 1 }}>
             <img src={bg1} alt="Group-1" border="0" style={{ width: "100%", maxWidth: "100vw" }} />
           </div>

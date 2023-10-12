@@ -113,8 +113,8 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    emailjs
+    setSuccess(true)
+    /* emailjs
       .sendForm(
         "YOUR_SERVICE_ID", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
         "YOUR_TEMPLATE_ID", // Buraya EmailJS servisinizin şablon ID'sini buraya ekle
@@ -130,7 +130,8 @@ const Contact = () => {
           console.log(error.text);
           setSuccess(false);
         }
-      );
+      ); */
+      ref.current.reset();
   };
   return (
     <Section>
@@ -138,20 +139,22 @@ const Contact = () => {
         <div id={"contact"} />
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
-            <Input placeholder="Name" name="name" />
-            <Input placeholder="Email" name="email" />
+            <h1>Contact Us</h1>
+            <Input placeholder="Name" className="text-black" name="name" type="text" required />
+            <Input placeholder="Email" className="text-black" name="email" type="email" required />
             <TextArea
               placeholder="Write your message"
+              className="text-black"
               name="message"
               rows={5}
+              required
             />
             <Button type="submit">Send</Button>
             {success &&
               "Your message has been sent. We'll get back to you soon :)"}
           </Form>
         </Left>
-        <Right>
+        <Right className="hidden md:block">
           <Map />
         </Right>
       </Container>

@@ -19,9 +19,8 @@ height: 100vh;
 const Container = styled.div`
 font-family: "SatoshiMedium", sans-serif !important;
 
-  padding: 112px 96px 0;
+  
   box-sizing: border-box;
-  scroll-snap-align: center;
   width: 100%;
 
   display: flex;
@@ -147,8 +146,6 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Img = styled.img`
 font-family: "SatoshiMedium", sans-serif !important;
 
-  width: 370px;
-  height: 500px;
   object-fit: contain;
   position: absolute;
   top: 0;
@@ -173,21 +170,21 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Hero = () => {
 
   return (
-    <Section>
-      <Navbar />
-      <Container>
+    <Section className="flex flex-col h-screen justify-start overflow-y-auto items-start ">
+      
+      <Container className="!pt-16 md:pt-24 px-12 !pb-12 h-full flex items-center !justify-start pt">
         <div id={"home"} />
         <Left>
-          <Title>Zero-emission
+          <h1>Zero-emission
             Zero-waste 
-                </Title>
+                </h1>
           <WhatWeDo>
-            <Subtitle>Solar Powered Blockchain</Subtitle>
+            <h2 className="text-black">Solar Powered Blockchain</h2>
           </WhatWeDo>
-          <Desc>The Sittaris Project is a new endeavor that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</Desc>
+          <p>The Sittaris Project is a new endeavor that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</p>
           
         </Left>
-        <Right>
+        <Right className="h-2/3">
           <Canvas>
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
@@ -197,7 +194,7 @@ const Hero = () => {
               <Atom />
             </Suspense>
           </Canvas>
-          <Img src="./img/Sittaris_3.png" />
+          <Img className="w-1/3" src="./img/Sittaris_3.png" />
         </Right>
       </Container>
     </Section>
