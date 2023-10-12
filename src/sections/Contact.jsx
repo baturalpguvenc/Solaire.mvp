@@ -113,25 +113,27 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSuccess(true)
-    /* emailjs
+    //setSuccess(true)
+    /* emailjs.init("z_oOBlM3S9f3AaIxZ"); */
+    emailjs
       .sendForm(
-        "YOUR_SERVICE_ID", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
-        "YOUR_TEMPLATE_ID", // Buraya EmailJS servisinizin şablon ID'sini buraya ekle
+        "service_etkgrrf", // Buraya EmailJS servisinizin servis ID'sini buraya ekle
+        "template_hbainek", // Buraya EmailJS servisinizin şablon ID'sini buraya ekle
         ref.current,
-        "YOUR_USER_ID" // Buraya EmailJS servisinizin kullanıcı ID'sini ekle
+        "z_oOBlM3S9f3AaIxZ" // Buraya EmailJS servisinizin kullanıcı ID'sini ekle
       )
       .then(
         (result) => {
           console.log(result.text);
           setSuccess(true);
+          ref.current.reset();
         },
         (error) => {
           console.log(error.text);
           setSuccess(false);
         }
-      ); */
-      ref.current.reset();
+      );
+      
   };
   return (
     <Section>
@@ -150,8 +152,8 @@ const Contact = () => {
               required
             />
             <Button type="submit">Send</Button>
-            {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+            {success ?
+              "Your message has been sent. We'll get back to you soon :)" : success === false && "Something went wrong. Please try again later :(" }
           </Form>
         </Left>
         <Right className="hidden md:block">
