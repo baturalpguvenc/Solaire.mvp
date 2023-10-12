@@ -46,7 +46,6 @@ font-family: "SatoshiMedium", sans-serif !important;
 
   @media only screen and (max-width: 768px) {
     flex: 1;
-    align-items: center;
   }
 `;
 
@@ -172,10 +171,10 @@ const Hero = () => {
   return (
     <Section className="flex flex-col h-screen justify-center overflow-y-auto items-start ">
       
-      <Container className="!pt-24 md:pt-24 px-12 !pb-12 h-fit md:h-full flex items-center !justify-start pt">
+      <Container className="!pt-24 md:pt-24 px-12 !pb-12 h-fit md:h-full text-justify flex items-center !justify-start pt">
         <div id={"home"} />
-        <Left>
-          <h1>Zero-emission
+        <Left className="">
+          <h1>Zero-emission <br />
             Zero-waste 
                 </h1>
           <WhatWeDo>

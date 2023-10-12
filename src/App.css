@@ -43,7 +43,7 @@ h1 {
   
   /* letter-spacing: -10pt; */
   text-transform: uppercase;
-  @apply text-3xl  md:text-7xl font-semibold
+  @apply text-3xl  md:text-6xl font-semibold
 }
 
 h2 {

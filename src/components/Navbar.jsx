@@ -39,7 +39,7 @@ const Container = styled.header`
   z-index: 1000;
 
   @media (max-width: 768px) {
-    padding: 6px clamp(24px, 5%, 96px);
+    padding: 6px clamp(12px, 5%, 96px);
   }
 `;
 
@@ -154,7 +154,7 @@ const Navbar = () => {
           <img className="h-16 md:h-20 " src="./img/logo.svg" />
         </a>
 
-        <List className="gap-12 flex justify-between w-2/3">
+        <List className="gap-6 md:gap-12 flex justify-end md:justify-between w-2/3">
           <ListItem>
             <a href="https://qr.page/g/9kkbyDsTMe" target="_blank">
               <Paper>Litepaper</Paper>
