@@ -169,7 +169,7 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Hero = () => {
 
   return (
-    <Section className="flex flex-col h-screen justify-center overflow-y-auto items-start ">
+    <Section className="flex flex-col h-screen justify-center overflow-y-auto 2xl:overflow-hidden items-start ">
       
       <Container className="!pt-24 md:pt-24 px-12 !pb-12 h-fit md:h-full text-justify flex items-center !justify-start pt">
         <div id={"home"} />
