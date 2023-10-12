@@ -21,11 +21,11 @@ const Container = styled.div`
   gap: 20px;
   justify-content: space-between;
   padding: 80px 0 30px 30px;
-  max-width: 31%;
+  max-width: 30%;
   text-align: justify;
   @media only screen and (max-width: 768px) {
     padding: 16px;
-    max-width: 80%;
+    max-width: 94%;
     margin-bottom:380px;
     flex-direction: column;
     background:rgba(155,255,255,0.2);
@@ -48,7 +48,7 @@ const H = styled.div`
   font-weight: 600;
   text-aling: left;
   @media only screen and (max-width: 768px) {
-    font-size: 20px ;
+    font-size: 18px ;
   }
 `;
 const Head = styled.div`
@@ -68,7 +68,8 @@ const Participate = () => {
       style={{
         backgroundImage: `url("${SolarPanel}")`,
         backgroundSize: "cover",
-        backgroundPosition: "center",
+        backgroundPosition: "right",
+        backgroundRepeat: "no-repeat",
       }}
     >
       <Section className="pt-20 md:pt-32 !justify-start" style={{
@@ -82,17 +83,17 @@ const Participate = () => {
           fontWeight: '300',
         }}>
           <h1 >Participate</h1>
-          <H>Participate in Green BTC Mining</H>
-          <P>
+          <H className="!font-medium md:font-semibold">Participate in Green BTC Mining</H>
+          <p>
             You can participate in the future expansion of the Sittaris network.
             The expansion of the Sittaris services - energy storage, grid
             connection and heat production is anticipated for Q1 - 2024.
-          </P>
-          <H>Investment Opportunities</H>
-          <P>
+          </p>
+          <H className="!font-medium md:font-semibold">Investment Opportunities</H>
+          <p>
             Become a sustainable bitcoin miner yourself. Your returns will be in
             BTC.
-          </P>
+          </p>
         </Container>
       </Section>
     </div>

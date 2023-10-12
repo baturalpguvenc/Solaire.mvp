@@ -39,7 +39,7 @@ h1 {
   
   /* letter-spacing: -10pt; */
   text-transform: uppercase;
-  @apply text-3xl  md:text-7xl 
+  @apply text-3xl  md:text-7xl font-semibold
 }
 
 h2 {

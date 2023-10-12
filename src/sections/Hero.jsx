@@ -184,8 +184,8 @@ const Hero = () => {
           <p>The Sittaris Project is a new endeavor that unites state-of-the-art technologies to redefine the landscape of energy production and Bitcoin mining. Our primary commitment revolves around sustainability, zero-waste, zero-emission, and eco-consciousness.</p>
           
         </Left>
-        <Right className="h-2/3">
-          <Canvas>
+        <Right className="h-fit w-5/6 aspect-square">
+          <Canvas className="!w-full h-fit aspect-square">
             <Suspense fallback={null}>
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
@@ -211,7 +211,7 @@ const Sun = () => {
   sphere.position.set(0, 0, 0);
 
   // Büyüklüğü artırmak için scale özelliğini kullanın
-  sphere.scale.set(1.5, 1.5, 1.5); // Örneğin, 1.5 kat büyüttük.
+  sphere.scale.set(1,1,1); // Örneğin, 1.5 kat büyüttük.
 
   return <primitive object={sphere} />;
 };
