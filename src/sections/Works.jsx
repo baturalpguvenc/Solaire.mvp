@@ -92,16 +92,16 @@ const Right = styled.div`
 const Paragraph = styled.p`
 font-size: 0px !important;
 line-height:20px !important;
-background:rgba(255,255,255,0.2);
-backdrop-filter: blur(8px);
+background:rgba(255,255,255,0.15);
+backdrop-filter: blur(24px);
 margin:16px;
 border-radius:6px;
 padding:0px;
 color:#fff;
 
 @media only screen and (max-width: 768px) {
-  font-size: 14px !important;
-  padding:4px;
+  font-size: 16px !important;
+  padding:8px;
 }
 `
 

@@ -137,11 +137,9 @@ font-family: "SatoshiMedium", sans-serif !important;
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
-    flex: 1;
+    flex: 3;
     width: 100%;
-    margin-top:60px;
-    margin-left:-50px;
-    margin-right:-50px;
+    margin-top:40px;
   }
 `;
 
@@ -161,8 +159,8 @@ font-family: "SatoshiMedium", sans-serif !important;
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 300px;
-    height: 300px;
+    width: 120px;
+    height: 120px;
   }
 
   @keyframes animate {

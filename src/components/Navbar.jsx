@@ -14,6 +14,11 @@ const Paper = styled.button`
   transition: background-color 150ms ease-in-out;
   position: relative;
 
+  @media (max-width: 768px) {
+    padding: 6px 16px;
+    font-size: 12px;
+  }
+
   &:hover {
     background-color: #00CF77; /* Yeşil renk üzerine gelindiğinde */
   }
@@ -55,17 +60,33 @@ const List = styled.nav`
   gap: 20px;
   align-items:center;
   font-family: "Montserrat", sans-serif;
+  
   @media only screen and (max-width: 768px) {
-    display: none;
+    gap: 10px;
   }
 `;
 
 const ListItem = styled.a`
+display:block;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 
   &:hover {
     text-decoration: underline 1px white;
+  }
+ 
+`;
+
+const ListItem2 = styled.a`
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+
+  &:hover {
+    text-decoration: underline 1px white;
+  }
+
+  @media (max-width: 768px) {
+    display:none !important;
   }
 `;
 
@@ -73,6 +94,10 @@ const Icons = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    display:none !important;
+  }
 `;
 
 const Icon = styled.img`
@@ -93,6 +118,10 @@ const Button = styled.button`
 
   &:hover {
     background-color: #ffa500;
+  }
+
+  @media (max-width: 768px) {
+    display:none !important;
   }
 `;
 
@@ -129,7 +158,7 @@ const Navbar = () => {
         <List>
            <ListItem>
             <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" style={{ display: 'flex', alignItems: 'center' }}>
-              <Paper style={{ flex: 0.4, marginRight: '10px' }}>
+              <Paper>
                 Litepaper
               </Paper>
             </a>
@@ -137,58 +166,58 @@ const Navbar = () => {
 
           <ListItem>
             <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
-              <Paper style={{ flex: 0.4, marginRight: '40px' }}>
+              <Paper>
                 Onepager
               </Paper>
             </a>
           </ListItem>
 
 
-          <ListItem>
-          </ListItem>
+          <ListItem2>
+          </ListItem2>
 
-          <ListItem>
-          </ListItem>
-          <ListItem>
-          </ListItem>
+          <ListItem2>
+          </ListItem2>
+          <ListItem2>
+          </ListItem2>
 
-          <ListItem>
-          </ListItem>
-          <ListItem>
-          </ListItem>
+          <ListItem2>
+          </ListItem2>
+          <ListItem2>
+          </ListItem2>
 
-          <ListItem>
-          </ListItem>
-          <ListItem>
-          </ListItem>
+          <ListItem2>
+          </ListItem2>
+          <ListItem2>
+          </ListItem2>
 
-          <ListItem>
-          </ListItem> <ListItem>
-          </ListItem>
+          <ListItem2>
+          </ListItem2> <ListItem2>
+          </ListItem2>
 
-          <ListItem>
-          </ListItem> 
+          <ListItem2>
+          </ListItem2> 
 
 
 
-          <ListItem>
+          <ListItem2>
             <a href={"#home"}>Home</a>
-          </ListItem>
-          <ListItem>
+          </ListItem2>
+          <ListItem2>
             <a href={"#team"}>Team</a>
-          </ListItem>
-          <ListItem>
+          </ListItem2>
+          <ListItem2>
             <a href={"#participate"}>Participate</a>
-          </ListItem>
-          <ListItem>
+          </ListItem2>
+          <ListItem2>
             <a href={"#works"}>Works</a>
-          </ListItem>
-          <ListItem>
+          </ListItem2>
+          <ListItem2>
             <a href={"#timeline"}>Timeline</a>
-          </ListItem>
-          <ListItem>
+          </ListItem2>
+          <ListItem2>
             <a href={"#contact"}>Contact</a>
-          </ListItem>
+          </ListItem2>
 
         </List>
         <Icons>
