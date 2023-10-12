@@ -20,10 +20,9 @@ const Paper = styled.button`
   }
 
   &:hover {
-    background-color: #00CF77; /* Yeşil renk üzerine gelindiğinde */
+    background-color: #00cf77; /* Yeşil renk üzerine gelindiğinde */
   }
 `;
-
 
 const Container = styled.header`
   position: absolute;
@@ -37,6 +36,7 @@ const Container = styled.header`
   box-sizing: border-box;
   background: linear-gradient(to bottom, #20202090, #20202020);
   backdrop-filter: blur(8px);
+  z-index: 1000;
 
   @media (max-width: 768px) {
     padding: 6px clamp(24px, 5%, 96px);
@@ -58,7 +58,7 @@ const Logo = styled.img`
 const List = styled.nav`
   display: flex;
   gap: 20px;
-  align-items:center;
+  align-items: center;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
   @media only screen and (max-width: 768px) {
@@ -67,14 +67,13 @@ const List = styled.nav`
 `;
 
 const ListItem = styled.a`
-display:block;
+  display: block;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
 
   &:hover {
     text-decoration: underline 1px white;
   }
- 
 `;
 
 const ListItem2 = styled.a`
@@ -86,7 +85,7 @@ const ListItem2 = styled.a`
   }
 
   @media (max-width: 768px) {
-    display:none !important;
+    display: none !important;
   }
 `;
 
@@ -96,7 +95,7 @@ const Icons = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    display:none !important;
+    display: none !important;
   }
 `;
 
@@ -121,12 +120,11 @@ const Button = styled.button`
   }
 
   @media (max-width: 768px) {
-    display:none !important;
+    display: none !important;
   }
 `;
 
 const Navbar = () => {
-
   const [account, setAccount] = useState("");
   const [balance, setBalance] = useState("");
 
@@ -149,30 +147,25 @@ const Navbar = () => {
     }
   };
 
-
   return (
     <div style={{ zIndex: "1000" }}>
       <Container>
-        <Logo src="./img/logo.svg" />
-      
+        <a className="flex w-fit h-full " href="/" >
+          <img className="h-20 " src="./img/logo.svg" />
+        </a>
+
         <List className="gap-12 felx justify-between w-2/3">
-           <ListItem>
-            <a href="https://qr.page/g/9kkbyDsTMe" target="_blank" >
-              <Paper>
-                Litepaper
-              </Paper>
+          <ListItem>
+            <a href="https://qr.page/g/9kkbyDsTMe" target="_blank">
+              <Paper>Litepaper</Paper>
             </a>
           </ListItem>
 
           <ListItem>
             <a href="https://qr.page/g/1SKuSTAhsDB" target="_blank">
-              <Paper>
-                Onepager
-              </Paper>
+              <Paper>Onepager</Paper>
             </a>
           </ListItem>
-
-
 
           <ListItem2>
             <a href={"#home"}>Home</a>
@@ -187,20 +180,20 @@ const Navbar = () => {
             <a href={"#works"}>Works</a>
           </ListItem2>
           <ListItem2>
-            <a href={"#timeline"}>Timeline</a>
+            <a href={"#roadmap"}>Roadmap</a>
           </ListItem2>
           <ListItem2>
             <a href={"#contact"}>Contact</a>
           </ListItem2>
-
         </List>
         <Icons>
-          <Button style={{ opacity: 0, cursor: "default" }} >Connect Wallet</Button>
+          <Button style={{ opacity: 0, cursor: "default" }}>
+            Connect Wallet
+          </Button>
         </Icons>
       </Container>
     </div>
   );
-
 };
 
 export default Navbar;

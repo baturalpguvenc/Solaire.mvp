@@ -26,7 +26,7 @@ export default function TimelineComponent() {
   ];
 
   return (
-    <div
+    <div id="roadmap"
       className="h-screen w-screen p-3 md:p-6 bg-black flex flex-col pt-20 md:pt-32 justify-center items-center"
       style={{
         scrollSnapType: "y proximity",
