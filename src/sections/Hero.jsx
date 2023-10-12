@@ -156,8 +156,8 @@ font-family: "SatoshiMedium", sans-serif !important;
   animation: animate 2s infinite ease alternate;
 
   @media only screen and (max-width: 768px) {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
 
   @keyframes animate {
