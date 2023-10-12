@@ -34,7 +34,7 @@ const Map = () => {
 
       <Marker coordinates={[5.6072, 52.6778]}>
         <text x="0" y="-28" textAnchor="end" alignmentBaseline="middle" fill="white" fontWeight="bold">
-          {"Den Haag"}
+          {"The Hauge"}
         </text>
         <circle r={8} fill="#FFF" />
       </Marker>

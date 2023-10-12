@@ -120,24 +120,30 @@ const Who = () => {
           <Desc>
           <div>
   <strong>Burak Kartal</strong>
-  <br />CEO and Co-founder
-  <a href="https://www.linkedin.com/in/burak-kartal-47751041/" target="_blank">
-    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-  </a>
+  <div class="container">
+    <div class="text">CEO and Co-founder</div>
+    <a href="https://www.linkedin.com/in/burak-kartal-47751041/" target="_blank">
+        <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
+    </a>
 </div>
+  </div>
 <div>
   <strong>Tomris Kartal</strong>
-  <br />COO and Co-founder
-  <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
-    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-  </a>
+  <div class="container">
+    <div class="text">COO and Co-founder</div>
+    <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
+        <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
+    </a>
+</div>
 </div>
 <div>
   <strong>Kerem Senel</strong>
-  <br />CPO and Co-founder
-  <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
-    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
-  </a>
+  <div class="container">
+    <div class="text">CPO and Co-founder</div>
+    <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
+        <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
+    </a>
+</div>
 </div>
 
 

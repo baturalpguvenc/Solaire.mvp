@@ -66,3 +66,17 @@ a {
   text-decoration: none;
   color:white
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.text {
+  margin-right: 10px; /* Adjust the spacing between text and icon as needed */
+}
+
+.linkedin-icon {
+  height: 30px;
+}

@@ -154,7 +154,7 @@ const Navbar = () => {
           <img className="h-20 " src="./img/logo.svg" />
         </a>
 
-        <List className="gap-12 felx justify-between w-2/3">
+        <List className="gap-12 flex justify-between w-2/3">
           <ListItem>
             <a href="https://qr.page/g/9kkbyDsTMe" target="_blank">
               <Paper>Litepaper</Paper>

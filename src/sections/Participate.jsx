@@ -32,6 +32,7 @@ const Container = styled.div`
     backdrop-filter: blur(12px);
     border-radius:10px;
     margin-left:10px;
+    padding-top: 40px;
   }
   
 `;
