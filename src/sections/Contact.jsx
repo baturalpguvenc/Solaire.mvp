@@ -14,6 +14,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   gap: 50px;
+
+  @media only screen and (max-width: 768px) {
+    gap: 0px;
+    flex-direction:column-reverse;
+  }
 `;
 
 const Left = styled.div`
@@ -28,6 +33,13 @@ const Left = styled.div`
 
 const Title = styled.h1`
   font-weight: 200;
+
+  @media (max-width: 768px) {
+    font-size: 52px !important;
+    font-weight: 500;
+    line-height:36px !important;
+    margin-bottom:20px !important
+  }
 `;
 
 const Form = styled.form`
@@ -36,8 +48,10 @@ const Form = styled.form`
   flex-direction: column;
   gap: 25px;
 
-  @media only screen and (max-width: 768px) {
-    width: 300px;
+  @media (max-width: 768px) {
+    width: 100% !important;
+    padding:16px !important;
+    gap: 12px;
   }
 `;
 
@@ -68,8 +82,9 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 1;
 
-  @media only screen and (max-width: 768px) {
-    display: none;
+  @media (max-width: 768px) {
+    flex:0;
+    height:350px !important;
   }
 `;
 
@@ -101,7 +116,7 @@ const Contact = () => {
   return (
     <Section>
       <Container>
-      <div id={"contact"}/>
+        <div id={"contact"} />
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
             <Title>Contact Us</Title>

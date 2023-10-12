@@ -73,9 +73,9 @@ function App() {
         <h3>2nd SUB-HEADERS OR HIGHLIGHTS</h3>
       </Works>
 
-      <TimeLine>
+      {/* <TimeLine>
       <h1>HEADLINES</h1>
-      </TimeLine>
+      </TimeLine> */}
       
       <Contact>
         <p>BODY TEXT</p>
