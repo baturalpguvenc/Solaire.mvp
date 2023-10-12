@@ -16,7 +16,7 @@ const LogoSpinner = () => {
 
   // Logo resmini yükleyin
   textureLoader.load(
-    "./public/img/varlık.png", // Logo resminizin yolunu ekleyin
+    "/img/varlık.png", // Logo resminizin yolunu ekleyin
     (texture) => {
       // Texture yüklendiğinde yapılacak işlemler
       console.log("Texture yüklendi:", texture);

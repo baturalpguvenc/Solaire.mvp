@@ -122,21 +122,21 @@ const Who = () => {
   <strong>Burak Kartal</strong>
   <br />CEO and Co-founder
   <a href="https://www.linkedin.com/in/burak-kartal-47751041/" target="_blank">
-    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
   </a>
 </div>
 <div>
   <strong>Tomris Kartal</strong>
   <br />COO and Co-founder
   <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
-    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
   </a>
 </div>
 <div>
   <strong>Kerem Senel</strong>
   <br />CPO and Co-founder
   <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
-    <img src="./public/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
+    <img src="/img/linkedin.png" alt="LinkedIn" style={{ height: "30px" }} />
   </a>
 </div>
 
