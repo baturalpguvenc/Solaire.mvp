@@ -70,17 +70,12 @@ const ProductDesign = () => {
         <ProductsText> <b> Green Bitcoin Mining </b> </ProductsText>
         <br />
 
-        Sittaris generates the energy used for Bitcoin mining with solar panels that are placed on top of our greenhouses and we have over 1 GWp in development across Europe and emerging markets, making us a sustainable force in the crypto mining industry. Sittaris offers investing opportunities in an innovative approach, with returns in Bitcoin (BTC) while supporting a greener future for cryptocurrency mining.
-        <br />
+        Sittaris generates the energy used for Bitcoin mining with solar panels that are placed on top of our greenhouses and we have over 1 GWp in development across Europe and emerging markets, making us a sustainable force in the crypto mining industry. Sittaris offers investing opportunities in an innovative approach, with returns in Bitcoin (BTC) while supporting a greener future for cryptocurrency mining.        <br />
         <br />
         <ProductsText> <b> Proof of Energy </b> </ProductsText>
 
         <br />
-        Sittaris generates the energy used for Bitcoin mining with solar panels that are place on top of greenhouses. Trio Investment BV is an investment
-        company that invests in sustainable energy in Europe and emerging markets. With Sittaris they offer investment opportunities with returns in bitcoin and euros.
-
-        Sittaris uses blockchain technology to introduce a trustless framework known as "Proof of Energy" (“POE”) for transparently verifying the source
-        and quantity of energy generated. Energy generated in our solar parks is sold back to the grid or channeled into a green-mining setup to generate Bitcoin.
+        Sittaris uses blockchain technology to introduce a trustless framework known as "Proof of Energy" (“POE”) for transparently verifying the source and quantity of energy generated. Energy generated in our solar parks is sold back to the grid or channeled into a green-mining setup to generate Bitcoin.
 
         <br />
         <br />

@@ -10,6 +10,8 @@ import bg2 from "../assets/images/bg2.jpg";
 import brand2 from "../assets/images/brand2.png";
 
 const Section = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
   align-items: center;
@@ -20,6 +22,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   padding: 80px 0 0 0;
   height: 100vh;
   box-sizing: border-box;
@@ -40,6 +44,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -72,6 +78,8 @@ const Title = styled.h1`
 `;
 
 const WhatWeDo = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   display: flex;
   align-items: center;
   gap: 10px;
@@ -79,10 +87,14 @@ const WhatWeDo = styled.div`
 
 
 const Line = styled.img`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 5px;
 `;
 
 const Subtitle = styled.h2`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-weight: bold;
   color: #000000
   ;
@@ -92,6 +104,8 @@ const Subtitle = styled.h2`
 
 
 const Desc = styled.p`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-size: 22px !important;
   color: white;
   text-align: justify !important;
@@ -105,7 +119,7 @@ const Desc = styled.p`
 const Button = styled.button`
   background: linear-gradient(135deg, #000080, #008000);
   color: white;
-  font-family: monospace !important;
+  font-family: "SatoshiMedium", sans-serif !important;
   font-weight: lighter;
   width: 200px;
   font-size: 26px;

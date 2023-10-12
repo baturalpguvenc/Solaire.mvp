@@ -8,9 +8,10 @@ import forest from "../assets/images/solaire-jpg.jpg";
 const data = ["Products"];
 
 const Button = styled.button`
+
   background: linear-gradient(135deg, #000080, #008000);
   color: white;
-  font-family: monospace !important;
+  font-family: "SatoshiMedium", sans-serif !important;
   font-weight: lighter;
   width: 200px;
   font-size: 26px;
@@ -21,6 +22,8 @@ const Button = styled.button`
 `;
 
 const Section = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -32,6 +35,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   width: 1400px;
   display: flex;
   justify-content: space-between;
@@ -43,6 +48,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 1;
   display: flex;
   align-items: center;
@@ -55,6 +62,8 @@ const Left = styled.div`
 `;
 
 const List = styled.ul`
+font-family: "SatoshiMedium", sans-serif !important;
+
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -68,7 +77,7 @@ const List = styled.ul`
 const ListItem = styled.li`
   font-size: 90px;
   font-weight: bold;
-  font-family: "SatoshiBlack", sans-serif;
+  font-family: "SatoshiMedium", sans-serif !important;
   color: white;
 `;
 

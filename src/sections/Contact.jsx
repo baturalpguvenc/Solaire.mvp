@@ -4,11 +4,15 @@ import styled from "styled-components";
 import Map from "../components/Map";
 
 const Section = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   width: 100%;
   height: 100%;
   display: flex;
@@ -22,6 +26,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 1;
   display: flex;
   align-items: center;
@@ -32,6 +38,8 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-weight: 200;
 
   @media (max-width: 768px) {
@@ -43,6 +51,8 @@ const Title = styled.h1`
 `;
 
 const Form = styled.form`
+font-family: "SatoshiMedium", sans-serif !important;
+
   width: 500px;
   display: flex;
   flex-direction: column;
@@ -56,6 +66,8 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+font-family: "SatoshiMedium", sans-serif !important;
+
   padding: 20px;
   background-color: #e8e6e6;
   border: none;
@@ -63,6 +75,8 @@ const Input = styled.input`
 `;
 
 const TextArea = styled.textarea`
+font-family: "SatoshiMedium", sans-serif !important;
+
   padding: 20px;
   border: none;
   border-radius: 5px;
@@ -70,6 +84,8 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
+font-family: "SatoshiMedium", sans-serif !important;
+
   background: #353AA1;
   color: white;
   border: none;
@@ -80,6 +96,8 @@ const Button = styled.button`
 `;
 
 const Right = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 1;
 
   @media (max-width: 768px) {

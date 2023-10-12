@@ -2,9 +2,11 @@ import styled from "styled-components";
 import React, { useState } from "react";
 //import forest from "../assets/images/logo.png";
 
-import SolarPanel from "../assets/images/solar-panel.png" 
+import SolarPanel from "../assets/images/parti.png" 
 
 const Section = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -16,6 +18,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   width: 1400px;
   display: flex;
   justify-content: space-between;

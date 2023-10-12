@@ -7,7 +7,8 @@ import Atom from "../components/Atom"; // Atom bileşenini ekledim
 import * as THREE from "three";
 
 const Section = styled.div`
-  height: 100vh;
+font-family: "SatoshiMedium", sans-serif !important;
+height: 100vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -16,11 +17,13 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   padding: 112px 96px 0;
   box-sizing: border-box;
   scroll-snap-align: center;
   width: 100%;
-  
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -34,6 +37,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -67,12 +72,22 @@ const Title = styled.h1`
 `;
 
 const WhatWeDo = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   display: flex;
   align-items: center;
   gap: 10px;
 `;
 
+const Line = styled.img`
+font-family: "SatoshiMedium", sans-serif !important;
+
+  height: 5px;
+`;
+
 const Subtitle = styled.h2`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-weight: bold;
   color: #000000
   ;
@@ -87,6 +102,8 @@ const Subtitle = styled.h2`
 
 
 const Desc = styled.p`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-size: 22px !important;
   color: white;
   text-align: justify !important;
@@ -99,7 +116,24 @@ const Desc = styled.p`
   }
 `;
 
+const Button = styled.button`
+font-family: "SatoshiMedium", sans-serif !important;
+
+  background: linear-gradient(135deg, #000080, #008000);
+  color: white;
+  font-family: monospace !important;
+  font-weight: lighter;
+  width: 200px;
+  font-size: 26px;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+`;
+
 const Right = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 3;
   position: relative;
   @media only screen and (max-width: 768px) {
@@ -111,8 +145,11 @@ const Right = styled.div`
   }
 `;
 
+
 const Img = styled.img`
-  width: 300px;
+font-family: "SatoshiMedium", sans-serif !important;
+
+  width: 370px;
   height: 500px;
   object-fit: contain;
   position: absolute;

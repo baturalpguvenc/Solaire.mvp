@@ -6,6 +6,8 @@ import Cube from "../components/Cube";
 import CoinAnimation from "../components/CoinAnimation";
 
 const Section = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -13,6 +15,8 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   height: 100vh;
   scroll-snap-align: center;
   width: 1400px;
@@ -21,6 +25,8 @@ const Container = styled.div`
 `;
 
 const Left = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 1;
   margin-right: 50px;
 
@@ -30,6 +36,8 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-size: 50px;
   @media only screen and (max-width: 768px) {
     font-size: 50px;
@@ -37,6 +45,8 @@ const Title = styled.h1`
 `;
 
 const Right = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -50,6 +60,8 @@ const Right = styled.div`
 `;
 
 const WhatWeDo = styled.div`
+font-family: "SatoshiMedium", sans-serif !important;
+
   display: flex;
   align-items: center;
   gap: 10px;
@@ -65,6 +77,8 @@ const Subtitle = styled.h2`
 `;
 
 const Desc = styled.p`
+font-family: "SatoshiMedium", sans-serif !important;
+
   font-size: 22px !important;
   color: black;
   font-weight: lighter;
@@ -72,7 +86,7 @@ const Desc = styled.p`
 
 const Button = styled.button`
   background: linear-gradient(to right, #191970, #008000);
-  font-family: monospace;
+  font-family: "SatoshiMedium", sans-serif !important;
   color: white;
   font-weight: 500;
   width: 220px;
