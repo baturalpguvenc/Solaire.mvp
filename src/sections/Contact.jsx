@@ -40,10 +40,11 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Title = styled.h1`
 font-family: "SatoshiMedium", sans-serif !important;
 
-  font-weight: 200;
+  font-weight: 500;
+  font-size: 56px !important;
 
   @media (max-width: 768px) {
-    font-size: 52px !important;
+    font-size: 42px !important;
     font-weight: 500;
     line-height:36px !important;
     margin-bottom:20px !important
