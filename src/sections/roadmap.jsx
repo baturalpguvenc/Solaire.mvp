@@ -27,7 +27,7 @@ export default function TimelineComponent() {
 
   return (
     <div id="roadmap"
-      className="h-screen w-screen p-3 md:p-6 bg-black flex flex-col pt-20 md:pt-32 justify-center items-center"
+      className="h-screen w-screen p-3 md:p-6 gap-6 bg-black flex flex-col pt-20 md:pt-32 justify-center items-center"
       style={{
         scrollSnapType: "y proximity",
         scrollSnapAlign: "center",
@@ -35,7 +35,7 @@ export default function TimelineComponent() {
     >
         <h1>Roadmap</h1>
       <div
-        className={`bg-[url('/roadmap-vertical.png')] md:bg-[url('/roadmap2.png')] w-1/2 m:w-2/3 h-5/6 md:h-full grid md:grid-cols-3 text-black justify-center items-center`}
+        className={`bg-[url('/roadmap-vertical.png')] md:bg-[url('/roadmap2.png')] w-1/2 m:w-2/3 h-[60vh] md:h-full grid md:grid-cols-3 text-black justify-center items-center`}
         style={{
           
           backgroundSize: "contain",

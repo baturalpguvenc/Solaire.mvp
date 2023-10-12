@@ -170,9 +170,9 @@ font-family: "SatoshiMedium", sans-serif !important;
 const Hero = () => {
 
   return (
-    <Section className="flex flex-col h-screen justify-start overflow-y-auto items-start ">
+    <Section className="flex flex-col h-screen justify-center overflow-y-auto items-start ">
       
-      <Container className="!pt-16 md:pt-24 px-12 !pb-12 h-full flex items-center !justify-start pt">
+      <Container className="!pt-24 md:pt-24 px-12 !pb-12 h-fit md:h-full flex items-center !justify-start pt">
         <div id={"home"} />
         <Left>
           <h1>Zero-emission

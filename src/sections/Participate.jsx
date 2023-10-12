@@ -65,7 +65,7 @@ const Participate = () => {
   return (
     <div
       id={"participate"}
-      className="h-screen w-screen  bg-black flex flex-col X justify-start items-center"
+      className="h-screen w-screen   bg-black flex flex-col X justify-start items-center"
       style={{
         backgroundImage: `url("${SolarPanel}")`,
         backgroundSize: "cover",
@@ -73,14 +73,14 @@ const Participate = () => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <Section className="pt-20 md:pt-32 !justify-start" style={{
+      <Section className="pt-28 md:pt-32 !justify-start" style={{
         display: "flex",
         flexDirection: "column",
         gap: "20px",
         color: 'white'
 
       }}>
-        <Container className="flex w-full" style={{
+        <Container className="flex w-full text-justify" style={{
           fontWeight: '300',
         }}>
           <h1 >Participate</h1>

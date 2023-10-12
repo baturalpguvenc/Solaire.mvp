@@ -33,6 +33,10 @@
   font-family: "SatoshiMedium",sans-serif!important;
   outline: none;
 }
+body {
+  background: linear-gradient(135deg, #083432, #03AE5A, #00CF77, #FFF15F, #F6911D);
+  color: white;
+}
 
 h1 {
   font-family: "SatoshiBlack", sans-serif;

@@ -151,7 +151,7 @@ const Navbar = () => {
     <div style={{ zIndex: "1000" }}>
       <Container>
         <a className="flex w-fit h-full " href="/" >
-          <img className="h-20 " src="./img/logo.svg" />
+          <img className="h-16 md:h-20 " src="./img/logo.svg" />
         </a>
 
         <List className="gap-12 flex justify-between w-2/3">

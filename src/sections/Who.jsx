@@ -121,7 +121,7 @@ const Who = () => {
           <div>
   <strong>Burak Kartal</strong>
   <div class="container">
-    <div class="text">CEO and Co-founder</div>
+    <div class="text">CEO and Co-Founder</div>
     <a href="https://www.linkedin.com/in/burak-kartal-47751041/" target="_blank">
         <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
     </a>
@@ -130,7 +130,7 @@ const Who = () => {
 <div>
   <strong>Tomris Kartal</strong>
   <div class="container">
-    <div class="text">COO and Co-founder</div>
+    <div class="text">COO and Co-Founder</div>
     <a href="https://www.linkedin.com/in/tomris-kartal-664ba140/" target="_blank">
         <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
     </a>
@@ -139,7 +139,7 @@ const Who = () => {
 <div>
   <strong>Kerem Senel</strong>
   <div class="container">
-    <div class="text">CPO and Co-founder</div>
+    <div class="text">CPO and Co-Founder</div>
     <a href="https://www.linkedin.com/in/kerem-senel-753a7210/" target="_blank">
         <img src="/img/linkedin.png" alt="LinkedIn" class="linkedin-icon" />
     </a>

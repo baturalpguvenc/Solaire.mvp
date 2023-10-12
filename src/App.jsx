@@ -11,7 +11,7 @@ import Roadmap from "./sections/roadmap";
 import Navbar from "./components/Navbar";
 
 const Container = styled.div`
-  height: 100svh;
+  height: 100vh;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   overflow-y: auto;
